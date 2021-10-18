@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="report_invoice_customized" inherit_id="account.report_invoice_document">
+            <xpath expr="//th[@name='th_description']" position="replace">
+                 <th name="th_description" class="text-left"><span>Item Description</span></th>
+            </xpath>
+            <xpath expr="//th[@name='th_description']" position="before">
+                 <th name="th_item_code" class="text-left"><span>Item Code</span></th>
+            </xpath>
+            <xpath expr="//th[@name='th_description']" position="after">
+                 <th name="th_item_unit" class="text-left"><span>Item Unit</span></th>
+            </xpath>
+            <xpath expr="//td[@name='account_invoice_line_name']" position="replace">
+                 <td name="account_invoice_line_name"><span t-field="line.product_id.name" t-options="{'widget': 'text'}"/></td>
+            </xpath>
+            <xpath expr="//td[@name='account_invoice_line_name']" position="before">
+                 <td name="td_item_code"><span t-field="line.product_id.default_code"/></td>
+            </xpath>
+            <xpath expr="//tbody[@class='invoice_tbody']/t/tr/t/td[3]" position="replace">
+                 <td class="text-right">
+                    <span t-field="line.quantity"/>
+                </td>
+            </xpath>
+            <xpath expr="//td[@name='account_invoice_line_name']" position="after">
+                 <td name="td_item_unit"><span t-field="line.product_uom_id"  groups="uom.group_uom"/></td>
+            </xpath>
+            <xpath expr="//th[@name='th_taxes']" position="replace">
+            </xpath>
+            <xpath expr="//tbody[@class='invoice_tbody']/t/tr/t/td[7]" position="replace">
+            </xpath>
+
+        </template>
+</odoo>
