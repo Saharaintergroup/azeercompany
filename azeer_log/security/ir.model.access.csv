@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_azeer_log_azeer_log,azeer_log.azeer_log,model_azeer_log_azeer_log,base.group_user,1,1,1,1
