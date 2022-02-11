@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="azeer_s_website_form" name="Azeer Form">
+            <section class="s_website_form pt16 pb16" data-vcss="001" data-snippet="s_website_form">
+                <div class="section">
+                    <div class="contact-title"><span>Keep In Touch</span></div>
+                    <div class="contact-heading">
+                      Help Us To Improve Our Services And Know What Is Best For You !
+                    </div>
+                    <div class="section-contact">
+                        <div class="container">
+                            <div class="contact-form">
+                                <form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-pre-fill="true">
+                                    <div class="s_website_form_rows row s_col_no_bgcolor">
+                                        <div class="form-group col-12 s_website_form_submit" data-name="Submit Button">
+                                            <div style="width: 200px;" class="s_website_form_label"/>
+                                            <a href="#" role="button" class="btn-contact-submit s_website_form_send">Submit</a>
+                                            <span id="s_website_form_result"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="contact-bubble user1">
+                                    <img src="/azeer_theme/static/src/images/snippets/User1.png" alt="Customer" />
+                                </div>
+                                <div class="contact-bubble user2">
+                                    <img src="/azeer_theme/static/src/images/snippets/User2.png" alt="Customer" />
+                                </div>
+                                <div class="contact-bubble user3">
+                                    <img src="/azeer_theme/static/src/images/snippets/User3.png" alt="Customer" />
+                                </div>
+                                <div class="contact-bubble user4">
+                                    <img src="/azeer_theme/static/src/images/snippets/User4.png" alt="Customer" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </data>
+</odoo>

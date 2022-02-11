@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="azeer_workflow_snippets" name="El - Azeer Workflow">
+            <section class="s_references bg-gray-lighter">
+                <div class="section">
+                <div class="section-workflow">
+                  <div class="container">
+                        <div class="title"><span>El - Azeer Workflow</span></div>
+                            <div class="b-title text-center">
+                                We Help You To Find The Right Device Easily !
+                            </div>
+                            <div class="row">
+                              <div class="col-md-6">
+                                <div class="workflow-left">
+                                  <h2 class="workflow-title">Company’s Workflow</h2>
+                                  <h2 class="workflow-heading text-break">
+                                    Our Work Is Done In Four Main Step !
+                                  </h2>
+                                  <p class="workflow-content">
+                                    lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                                    diam nonumy .
+                                  </p>
+                                  <ul class="list list-unstyled">
+                                    <li class="workflow-list">Send Us Your Request</li>
+                                    <li class="workflow-list">
+                                      We Accept Your Request With Pleasure
+                                    </li>
+                                    <li class="workflow-list">
+                                      Find The Appropriate Device For You
+                                    </li>
+                                    <li class="workflow-list">
+                                      Shipping The Device To Your Area
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-md-6">
+                                <div class="workflow-right">
+                                  <img
+                                    src="/azeer_theme/static/src/images/snippets/workflow-right.png"
+                                    alt="El-Azeer Workflow"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </data>
+</odoo>

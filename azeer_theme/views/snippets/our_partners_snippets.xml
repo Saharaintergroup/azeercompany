@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="azeer_our_partner_title_subtitle_snippets" name="Azeer Our Partners Title Subtitle">
+            <section class="s_references bg-gray-lighter">
+                <div class="section">
+                    <div class="section-partner">
+                        <div class="container">
+                            <div class="title"><span>Our Partners</span></div>
+                            <div class="b-title">
+                            We Deal With Best Companies In Europe To Provide High Quality Products !
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="azeer_our_partner_block_snippets" name="Azeer Our Partners block">
+            <section class="s_features section-partner">
+                <div class="container grid-view">
+                    <div class="row grid-content">
+                        <div class="col-lg-4 text-center list first">
+                            <div class="t-image">
+                                <img src="/azeer_theme/static/src/images/snippets/1g.png" alt="Partner Logo" />
+                            </div>
+                            <div class="l-text text-break">Tell what's the value for the <br/>customer for this feature.</div>
+                            <div class="social-icons">
+                                <a href="#" class="icon">
+                                  <img src="/azeer_theme/static/src/images/snippets/FB-grid.png" alt="Facebook" />
+                                </a>
+                                <a href="#" class="icon">
+                                  <img src="/azeer_theme/static/src/images/snippets/insta-grid.png" alt="Instagram" />
+                                </a>
+                                <a href="#" class="icon">
+                                  <img
+                                    src="/azeer_theme/static/src/images/snippets/messager-grid.png"
+                                    alt="Facebook Messanger"
+                                  />
+                                </a>
+                                <a href="#" class="icon">
+                                  <img src="/azeer_theme/static/src/images/snippets/twitter-grid.png" alt="Twitter" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center list first">
+                            <img src="/azeer_theme/static/src/images/snippets/2g.png" alt="Partner Logo" />
+                            <div class="l-text text-break">Write what the customer would like to know, <br/>not what you want to show.</div>
+                            <div class="social-icons">
+                                <a href="#" class="icon">
+                                  <img src="/azeer_theme/static/src/images/snippets/FB-grid.png" alt="Facebook" />
+                                </a>
+                                <a href="#" class="icon">
+                                  <img src="/azeer_theme/static/src/images/snippets/insta-grid.png" alt="Instagram" />
+                                </a>
+                                <a href="#" class="icon">
+                                  <img
+                                    src="/azeer_theme/static/src/images/snippets/messager-grid.png"
+                                    alt="Facebook Messanger"
+                                  />
+                                </a>
+                                <a href="#" class="icon">
+                                  <img src="/azeer_theme/static/src/images/snippets/twitter-grid.png" alt="Twitter" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center list first">
+                            <img src="/azeer_theme/static/src/images/snippets/3g.png" alt="Partner Logo" />
+                            <div class="l-text text-break">A small explanation of this great <br/>feature, in clear words.</div>
+                            <div class="social-icons">
+                                <a href="#" class="icon">
+                                  <img src="/azeer_theme/static/src/images/snippets/FB-grid.png" alt="Facebook" />
+                                </a>
+                                <a href="#" class="icon">
+                                  <img src="/azeer_theme/static/src/images/snippets/insta-grid.png" alt="Instagram" />
+                                </a>
+                                <a href="#" class="icon">
+                                  <img
+                                    src="/azeer_theme/static/src/images/snippets/messager-grid.png"
+                                    alt="Facebook Messanger"
+                                  />
+                                </a>
+                                <a href="#" class="icon">
+                                  <img src="/azeer_theme/static/src/images/snippets/twitter-grid.png" alt="Twitter" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="azeer_our_partner_load_more_snippets" name="Azeer Our Partners Load More">
+            <section class="section-partner">
+                <div class="container">
+                    <button class="btn load-more" type="button">
+                        <img src="/azeer_theme/static/src/images/snippets/load-more.png" alt="Load More" />
+                    </button>
+                </div>
+            </section>
+        </template>
+    </data>
+</odoo>
