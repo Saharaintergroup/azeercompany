@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="footer_default_sample" inherit_id="website.layout"
+              name="Footer Sample">
+        <xpath expr="//div[@id='footer']" position="replace">
+            <footer class="main-footer">
+                  <div class="footer-wrapper">
+                      <div class="container">
+                        <div class="row">
+                            <div class="left section col-4">
+                                <div class="f-logo"><img src="azeer_theme/static/src/images/footer_logo.png" alt="" /></div>
+                                <div class="s-text">El-Azeer Group 1923 - 1933</div>
+                                <div class="f-context">lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore .</div>
+                                <div class="social-links">
+                                    <div class="links"><a href="#"><img src="azeer_theme/static/src/images/fb.png" alt="" /></a></div>
+                                    <div class="links"><a href="#"><img src="azeer_theme/static/src/images/whatsapp.png" alt="" /></a></div>
+                                    <div class="links"><a href="#"><img src="azeer_theme/static/src/images/insta.png" alt="" /></a></div>
+                                </div>
+                            </div>
+                            <div class="middle section col-4">
+                                <div class="quick-links">
+                                    <div class="title">Quick Links</div>
+                                    <ul>
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Products</a></li>
+                                        <li><a href="#">Activities</a></li>
+                                        <li><a href="#">Partners</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right section col-4">
+                                <div class="contact-info">
+                                    <div class="title">Contact Info</div>
+                                    <ul>
+                                        <li><img src="azeer_theme/static/src/images/phone.png" alt="" /><span>102- 23239348 - 102-2312312</span></li>
+                                        <li><img src="azeer_theme/static/src/images/location.png" alt="" /><span>Idris Neighborhood - Hollow Libya</span></li>
+                                        <li class="mail"><img src="azeer_theme/static/src/images/mail.png" alt="" /><span>El-Azeer21@Gmail.Com</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </footer>
+                <div class="copyright">
+                    <div class="container">
+                      <div class="small-text">EL-AZEER © 2021 BY SAHARAINTERGROUP</div>
+                      <div class="copy-link">
+                          <ul>
+                              <li><a href="#">Privacy &amp; Policy</a></li>
+                              <li>|</li>
+                              <li><a href="#">Terms</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
+        </xpath>
+    </template>
+
+    <template id="theme_brand_promotion" inherit_id="website.brand_promotion">
+        <xpath expr="//div[hasclass('o_brand_promotion')]" position="replace" />
+    </template>
+    <template id="theme_frontend_footer" inherit_id="web.frontend_layout">
+        <xpath expr="//div[hasclass('o_footer_copyright')]" position="replace" />
+    </template>
+
+    
+
+</odoo>

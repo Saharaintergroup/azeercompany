@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="azeer_custom_snippets_web_snippets" inherit_id="website.snippets" name="Azeer Custom Snippets">
+            <xpath expr="//div[@id='snippet_structure']"   position="after">
+                <div id="azeer_snippet" class="o_panel">
+                    <div class="o_panel_header">Azeer Snippets</div>
+                    <div class="o_panel_body">
+                        <!-- Main carousel-->
+                        <!-- <t t-snippet="azeer_theme.azeer_carousel"
+                        t-thumbnail="" /> -->
+                        <t t-snippet="azeer_theme.azeer_carousel_2"
+                        t-thumbnail="" />  
+
+                        <!-- El Azeer Services -->
+                        <t t-snippet="azeer_theme.azeer_working_process"
+                        t-thumbnail="" />
+
+                        <!-- OVER +100 OF MEDICAL ANALYTICAL DEVICES READY TO USE ! -->
+                        <t t-snippet="azeer_theme.azeer_snippets_3"
+                        t-thumbnail="/azeer_theme/static/src/images/snippets/analytic.png" />
+
+                        <!-- El - Azeer Workflow -->
+                        <t t-snippet="azeer_theme.azeer_workflow_snippets"
+                        t-thumbnail="/azeer_theme/static/src/images/snippets/workflow.png" />
+
+                        <!-- Our Partners -->
+                        <t t-snippet="azeer_theme.azeer_our_partner_title_subtitle_snippets"
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_cover.svg" />
+                        <t t-snippet="azeer_theme.azeer_our_partner_block_snippets"
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_comparisons.svg" />
+                        <t t-snippet="azeer_theme.azeer_our_partner_load_more_snippets"
+                        t-thumbnail="/azeer_theme/static/src/images/snippets/loadmore.png" />
+
+                        <!-- Keep In Touch -->
+                        <t t-snippet="azeer_theme.azeer_s_website_form"
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_website_form.svg" />                        
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
