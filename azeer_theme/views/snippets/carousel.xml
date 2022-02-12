@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <template id="azeer_carousel" name=" Azeer carousel">
+            <section>
+                <div id="owl-demo" class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="/azeer_theme/static/src/images/Banner.png" alt=""/>
+                        <div class="container">
+                            <div class="overlay-content">
+                                <div class="small-title">El-Azeer</div>
+                                <div class="m-title">Welcome To El Azeer Group The Official Website About Us Out Now !</div>
+                                <div class="m-content">lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. at vero eos et</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/azeer_theme/static/src/images/Banner.png" alt=""/>
+                        <div class="container">
+                            <div class="overlay-content">
+                                <div class="small-title">El-Azeer</div>
+                                <div class="m-title">Welcome To El Azeer Group The Official Website About Us Out Now !</div>
+                                <div class="m-content">lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. at vero eos et</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/azeer_theme/static/src/images/Banner.png" alt=""/>
+                        <div class="container">
+                            <div class="overlay-content">
+                                <div class="small-title">El-Azeer</div>
+                                <div class="m-title">Welcome To El Azeer Group The Official Website About Us Out Now !</div>
+                                <div class="m-content">lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. at vero eos et</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="/azeer_theme/static/src/images/Banner.png" alt=""/>
+                        <div class="container">
+                            <div class="overlay-content">
+                                <div class="small-title">El-Azeer</div>
+                                <div class="m-title">Welcome To El Azeer Group The Official Website About Us Out Now !</div>
+                                <div class="m-content">lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. at vero eos et</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+      </template>
+  </data>
+</odoo>
