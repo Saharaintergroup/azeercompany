@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<template id="azeer_contact_us_form" name="Azeer Contact Us Form">
+            <section class="s_website_form pt16 pb16 contactus-page " data-vcss="001" data-snippet="s_website_form">
+                <div class="section">
+                    <div>
+                    	<div class="row">
+                    		<div class="contact-form contactus-page-form col-lg-8">
+                                <div><span>Leave A Message !</span></div>
+                    			<form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-pre-fill="true">
+                    				<div class="s_website_form_rows row s_col_no_bgcolor">
+                    					<div class="form-group col-12 s_website_form_submit" data-name="Submit Button">
+                    						<div style="width: 200px;" class="s_website_form_label"/>
+                    						<a href="#" role="button" class="btn-contact-submit s_website_form_send">Send</a>
+                    						<span id="s_website_form_result"></span>
+                    					</div>
+                    				</div>
+                    			</form>
+                    		</div>
+                    		<div class="col-lg-4 contactus-right">
+                    			<div class="contact-info">
+                                    <div class="title">Contact Details</div>
+                                    <p>1st Place</p>
+                                    <ul>
+                                        <li class="phone"><span>102- 23239348 - 102-2312312</span></li>
+                                        <li class="location"><span>Idris Neighborhood - Hollow Libya</span></li>
+                                        <li class="mail"><span>El-Azeer21@Gmail.Com</span></li>
+                                    </ul>
+                                </div>
+                                <div class="contact-info">
+                                    <p>2nd Place</p>
+                                    <ul>
+                                        <li  class="phone"><span>102- 23239348 - 102-2312312</span></li>
+                                        <li class="location"><span>Idris Neighborhood - Hollow Libya</span></li>
+                                        <li class="mail"><span>El-Azeer21@Gmail.Com</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+    </data>
+</odoo>

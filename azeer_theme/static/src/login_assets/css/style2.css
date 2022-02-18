@@ -91,27 +91,50 @@ body {
   overflow: hidden;
 }
 .page-wrapper .left {
-  padding-right: 0;
+  padding: 0;
 }
 .page-wrapper .right {
-  padding-left: 0;
+  padding: 0;
   height: 100%;
 }
 .page-wrapper .left-content {
   position: relative;
   background: url(../media/Login-left.png) no-repeat center;
   background-size: 100% 100%;
+  background-size: cover !important;
   padding: 50px 70px;
   max-height: 85vh;
   min-height: 85vh;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.page-wrapper .left:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #00000090;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.page-wrapper .left .text-content {
+  position: relative;
+  z-index: 5;
 }
 .page-wrapper .right-content {
   position: relative;
-  background: url(../media/Login-right.png) no-repeat center;
+  /*background: url(../media/Login-right.png) no-repeat center;*/
   background-size: 100% 100%;
   padding: 50px;
   max-height: 85vh;
   min-height: 85vh;
+  background-color: #EEF4F9;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  overflow-x: hidden;
 }
 .page-wrapper .left .login-logo {
   display: block;
@@ -233,17 +256,39 @@ body {
   width: -moz-fit-content;
 }
 .page-wrapper .right-content .login-submit {
+    background-color: #03bfb5;
+    color: #fff;
+    border-radius: 24px;
+    padding: 10px 20px;
+    min-height: 50px;
+    font-size: 14px;
+    min-width: 170px;
+    display: flex;
+    text-align: center;
+    border: none;
+    margin: 108px auto 30px auto;
+    align-items: center;
+    justify-content: center;
+}
+.page-wrapper .right-content a.login-submit {
   background-color: #03bfb5;
-  color: #fff;
-  border-radius: 24px;
-  padding: 10px 20px;
-  min-height: 50px;
-  font-size: 14px;
-  min-width: 170px;
-  display: block;
-  text-align: center;
-  border: none;
-  margin: 108px auto 30px auto;
+    color: #fff;
+    border-radius: 24px;
+    padding: 10px 20px;
+    min-height: 50px;
+    font-size: 14px;
+    min-width: 170px;
+    display: flex;
+    text-align: center;
+    border: none;
+    margin: 108px auto 30px auto;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+.page-wrapper .right-content a.login-submit:focus {
+  background-color: transparent;
 }
 
 .page-wrapper .right-content .login-submit:focus {
@@ -265,12 +310,15 @@ body {
 .reset-password-success.page-wrapper .right-content {
   padding: 50px 0;
 }
-.reset-password-success.page-wrapper .right-content .reset-mail-success {
+.reset-password.page-wrapper .right-content .reset-mail-success {
   font-size: 10px;
   text-align: center;
   padding: 18px 20px;
   color: #00ac00;
   background-color: #00ac0020;
+  width: calc(100% + 110px);
+  position: relative;
+  left: -50px;
 }
 
 .signup.page-wrapper .right-content {
@@ -397,7 +445,7 @@ body {
     padding: 30px 15px;
   }
   .page-wrapper .left-content {
-    border-radius: 40px;
+    border-radius: 30px;
   }
 }
 
@@ -412,11 +460,17 @@ body {
   }
   .page-wrapper .right-content {
     background-size: cover;
-    border-radius: 40px;
+    border-radius: 30px;
     margin-top: 30px;
   }
   .page-wrapper .left-content, .page-wrapper .right-content {
     min-height: auto;
+  }
+  .page-wrapper .left .get-started {
+    margin-bottom: 40px;
+  }
+  .page-wrapper .left .login-msg {
+    margin-top: 40px;
   }
 }
 

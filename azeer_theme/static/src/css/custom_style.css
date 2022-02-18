@@ -1,14 +1,16 @@
+:root {
+    --site_grey: #949399;
+    --common_size: 16px;
+}
 .section-services .grid-content, .section-partner .grid-content {
     display: flex;
     grid-template-columns: unset;
     grid-gap: unset;
 }
-
 .section-partner {
     padding: 25px 0;
 }
-
-.form-control {
+.section-contact .form-control {
     width: 100% !important;
     margin-bottom: 40px !important;
     padding: 21px 30px !important;
@@ -16,7 +18,245 @@
     margin-bottom: 35px !important;
     border-radius: 40px !important;
 }
-
 .s_website_form_label{
     width: unset !important;
+}
+
+/*---------- about us page design ----------*/
+.main-title {
+    display: inline-block;
+}
+.main-title .title1 {
+    color: var(--secondary);
+    font-size: 40px;
+    font-weight: bold;
+    padding-right: 5px;
+    line-height: normal;
+}
+.main-title .title2 {
+    color: var(--primary);
+    font-size: 40px;
+    font-weight: bold;
+    line-height: normal;
+}
+.story-block .main-title {
+    padding-bottom: 30px;
+    margin: 0 auto;
+}
+.story-block .sub-title {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 3px;
+    padding-left: 10px;
+    border-left: 4px solid var(--primary);
+    line-height: normal;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.story-block .content-bold {
+    font-weight: 600;
+    font-size: var(--common_size);
+    line-height: 26px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+.story-block .content {
+    font-size: var(--common_size);
+    padding: 10px 0;
+    margin: 0 auto;
+    line-height: 26px;
+}
+.values-block .main-title {
+    display: block;
+    padding: 0 15px 15px;
+}
+.values-block .grid-content {
+    margin-top: 60px;
+}
+.values-block .grid-content .t-image img {
+    max-width: 130px;
+}
+.values-block .grid-content .t-image {
+    margin-bottom: 30px;
+}
+.values-block .grid-content .l-text {
+    padding: 5px 0 15px;
+    color: var(--site_grey);
+    font-size: var(--common_size);
+}
+.mission-block .main-title {
+    margin-bottom: 40px;
+    display: block;
+}
+.statistics-block .main-title {
+    padding: 0 15px 15px;
+    color: var(--primary);
+    font-size: 34px;
+    font-weight: bold;
+    line-height: normal;
+    display: block;
+    margin-bottom: 30px;
+}
+.statistics-block .grid-content .value-content {
+    font-size: 50px;
+    font-weight: 900;
+    padding: 10px;
+}
+.statistics-block .grid-content h4.o_default_snippet_text {
+    font-size: 18px !important;
+    color: var(--primary);
+    font-weight: 600;
+    margin: 10px;
+}
+.mission-block .l-text{
+    color: var(--site_grey);
+    font-size: var(--common_size);
+}
+.statistics-block .l-text  {
+    color: var(--site_grey);
+    font-size: var(--common_size);
+    padding: 20px 10px;
+}
+.statistics-block .grid-content {
+    padding: 50px 0;
+}
+.statistics-block .grid-content .list.first.o_colored_level {
+    position: relative;
+}
+.statistics-block .grid-content .list.first.o_colored_level:nth-child(2):before {
+    content: '';
+    min-height: 40px;
+    width: 3px;
+    position: absolute;
+    left: -5px;
+    display: inline-flex;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    background-image: url(../images/Line_24.png);
+}
+.statistics-block .grid-content .list.first.o_colored_level:nth-child(2):after {
+    content: '';
+    min-height: 40px;
+    width: 3px;
+    position: absolute;
+    right: -5px;
+    display: inline-flex;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+    top: 50px;
+    background-image: url(../images/Line_24.png);
+}
+.o_default_snippet_text.s_timeline .s_timeline_line:before {
+    border-left: 3px solid var(--site_blue);
+    border-color: var(--site_blue);
+    position: absolute;
+    top: 52px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.s_timeline .text-center .main-title {
+    padding: 0 15px 100px;
+    display: block;
+}
+.s_timeline .s_timeline_line {
+    position: relative;
+    border-color: var(--site_blue);
+    margin-top: 50px;
+}
+.s_timeline .s_timeline_row.flex-row-reverse .s_timeline_card .card-sub-title:before {
+    position: absolute;
+    content: '';
+    width: 50px;
+    height: 6px;
+    left: -65px;
+    background-image: url(../images/timeline_right.png);
+    top: 14px;
+    background-size: 100%;
+}
+.s_timeline .s_timeline_row .s_timeline_card .card-sub-title:before {
+    position: absolute;
+    content: '';
+    width: 70%;
+    height: 8px;
+    right: -68px;
+    background-image: url(../images/timeline_hr_line.png);
+    top: 14px;
+    background-size: 100%;
+}
+.s_timeline .s_timeline_row.flex-row-reverse .s_timeline_content {
+    position: relative;
+}
+.s_timeline .s_timeline_line .s_timeline_card .card-title {
+    font-size: 14px;
+    margin: 0 auto;
+    color: var(--primary);
+}
+.s_timeline .s_timeline_line .s_timeline_card .card-sub-title {
+    font-size: 24px;
+    position: relative;
+    display: block;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.s_timeline .s_timeline_line .s_timeline_card .card-text {
+    font-size: 18px;
+    padding: 10px 0;
+    color: var(--site_grey);
+}
+@media (max-width: 991px) {
+    .values-block .grid-content, .statistics-block .grid-content {
+        grid-gap: 30px;
+    }
+    .s_timeline .text-center .main-title {
+        padding-bottom: 50px;
+    }
+    .s_timeline .s_timeline_row.flex-row-reverse .s_timeline_card .card-sub-title:before {
+        width: 40px;
+        height: 6px;
+        left: -50px;
+    }
+    .s_timeline .s_timeline_row .s_timeline_card .card-sub-title:before {
+        width: 70%;
+        height: 6px;
+        right: -54px;
+    }
+    .o_default_snippet_text.s_timeline .s_timeline_line:before {
+        border-left: 2px solid var(--site_blue);
+    }
+    .s_timeline .s_timeline_line .s_timeline_card .card-text {
+        font-size: var(--common_size);
+    }
+    section.mission-block[data-snippet="azeer_aboutus_mission_block"] {
+        padding: 40px 0;
+    }
+}
+@media (max-width: 767px) {
+    .s_timeline .s_timeline_row.flex-row-reverse .s_timeline_card .card-sub-title:before, .s_timeline .s_timeline_row .s_timeline_card .card-sub-title:before {
+        display: none;
+        content: none;
+    }
+    .main-title .title2, .main-title .title1 {
+        font-size: 30px;
+    }
+    section.s_timeline[data-snippet="azeer_aboutus_experience_block"], section.s_features.statistics-block[data-snippet="azeer_aboutus_statistics_block"],
+    section.mission-block[data-snippet="azeer_aboutus_mission_block"], section.s_features.values-block[data-snippet="azeer_aboutus_values_block"],
+    section.o_colored_level[data-snippet="azeer_aboutus_story_block"] {
+        padding: 40px 0 !important;
+    }
+    .s_timeline .s_timeline_row .s_timeline_content .card-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .o_default_snippet_text.s_timeline .s_timeline_line:before {
+        border: 0;
+    }
+    .s_timeline .s_timeline_line {
+        margin-top: 0;
+    }
+    .values-block .grid-content .t-image + h4 {
+        font-size: 20px;
+    }
 }

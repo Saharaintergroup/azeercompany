@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<template id="azeer_project_with_shade_snippets" name="Azeer Portfolio Projects With shade">
+            <section class="s_features project-section with-shade">
+                <div class="container grid-view">
+                    <div class="row grid-content">
+                        <div class="col-lg-4 text-center list first">
+                            <div class="date">2021/2022</div>
+                            <div class="project-name">Project Name</div>
+                            <div class="text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                        </div>
+                        <div class="col-lg-4 text-center list first">
+                           <div class="date">2021/2022</div>
+                            <div class="project-name">Project Name</div>
+                            <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                        </div>
+                        <div class="col-lg-4 text-center list first">
+                            <div class="date">2021/2022</div>
+                            <div class="project-name">Project Name</div>
+                            <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+        <template id="azeer_project_without_shade_snippets" name="Azeer Portfolio Projects Without shade">
+            <section class="s_features project-section without-shade">
+                <div class="container grid-view">
+                    <div class="row grid-content">
+                        <div class="col-lg-4 text-center list first">
+                            <div class="date">2021/2022</div>
+                            <div class="project-name">Project Name</div>
+                            <div class="text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                        </div>
+                        <div class="col-lg-4 text-center list first">
+                           <div class="date">2021/2022</div>
+                            <div class="project-name">Project Name</div>
+                            <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                        </div>
+                        <div class="col-lg-4 text-center list first">
+                            <div class="date">2021/2022</div>
+                            <div class="project-name">Project Name</div>
+                            <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </template>
+	</data>
+</odoo>

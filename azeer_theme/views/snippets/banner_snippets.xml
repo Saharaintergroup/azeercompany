@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- Common Banner -->
+        <template id="azeer_banner_snippets" name="Azeer Banner">
+            <section class="section common-banner" style="background-image: url('/azeer_theme/static/src/images/Banner.png');">
+                <div class="container text-center">
+                    <div class="main-title">Title 1</div>
+                    <div class="sub-title">Title 2</div>
+                </div>
+            </section>
+        </template>
+    </data>
+</odoo>     

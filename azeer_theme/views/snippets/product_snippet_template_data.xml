@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<template id="dynamic_filter_template_product_product_azeer_banner" name="Azeer Product Banner">
+		    <t t-foreach="records" t-as="data" data-number-of-elements="1" data-number-of-elements-sm="1">
+		        <t t-set="record" t-value="data['_record']"/>
+		        <!-- border-0 added in class--> 
+		        <div class="o_carousel_product_card card w-100 p-3 border-0">
+		            <div t-if="is_sample" class="h5 o_ribbon_right bg-primary text-uppercase">Sample</div>
+		            <input type="hidden" name="product-id" t-att-data-product-id="record.id"/>
+		            <div class="row flex-row-reverse">
+		                <div  class="col-lg-6 d-flex flex-column align-items-center">
+		                    <t t-set="product_images" t-value="record._get_images()"/>
+		                    <div class="product_banner d-flex">
+			                    <t t-foreach="product_images" t-as="product_image">
+	                               <div t-attf-class="product_img_div {{'img_active primary_img' if product_image_first else 'img_inactive'}} " t-field="product_image.image_512" t-options='{"widget": "image", "qweb_img_responsive": False, "class": "d-flex img-fluid mx-auto rounded", "alt-field": "name"}' />
+	                            </t>
+                            </div>	          
+	                    	<ol  t-attf-class="carousel-indicators position-static mx-auto my-0 text-right d-flex" >
+	                    	    <t t-foreach="product_images" t-as="product_image">
+	                    	    	<li  t-attf-class="m-1 mb-2 align-top active {{'active' if product_image_first else ''}}" data-target="#o-carousel-product-azeer" t-att-data-slide-to="str(product_image_index)" style="width: 90px; min-height: 100px;box-sizing: border-box;">
+		                    	        <div t-attf-class="js_select_image {{'primary_img' if product_image_first else ''}} "  t-field="product_image.image_128" t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_64_contain azeer_img", "alt-field": "name",}'/>
+
+	                    	    	</li>
+	                    		</t>
+	                    	</ol>
+		                </div>
+		                <div class="col-lg-6">
+		                    <div class="o_carousel_product_card_body p-5">
+		                        <a class="" t-att-href="record.website_url">
+                                       <h1 t-field="record.display_name"></h1>
+                                    </a>                            
+		                        <div class="d-flex align-items-center my-4">
+		                            <t t-if="is_view_active('website_sale.product_comment')" t-call="portal_rating.rating_widget_stars_static">
+		                                <t t-set="rating_avg" t-value="record.rating_avg"/>
+		                                <!-- <t t-set="rating_count" t-value="record.rating_count"/> -->
+		                            </t>
+		                            <div class="text-primary h4 mb-0 mr-3">
+		                            	<h6>Price: </h6>
+		                                <t t-call="website_sale.price_dynamic_filter_template_product_product"/>
+		                            </div>
+		                        </div>
+		                        <div class="card-text text-muted" t-field="record.description_sale"/>
+		                        <div class="mt-4">
+		                            <!-- <a class="btn btn-outline-secondary mr-1 mt-1" t-att-href="record.website_url">
+		                                View Product
+		                            </a> -->
+		                            <div class="css_quantity input-group d-inline-flex mr-2 my-1 align-middle" contenteditable="false">
+		                                <div class="input-group-prepend">
+		                                    <a t-attf-href="#" class="btn btn-primary js_add_cart_json" aria-label="Remove one" title="Remove one">
+		                                        <i class="fa fa-minus"></i>
+		                                    </a>
+		                                </div>
+		                                <input type="text" class="form-control quantity" data-min="1" name="add_qty" t-att-value="add_qty or 1"/>
+		                                <div class="input-group-append">
+		                                    <a t-attf-href="#" class="btn btn-primary float_left js_add_cart_json" aria-label="Add one" title="Add one">
+		                                        <i class="fa fa-plus"></i>
+		                                    </a>
+		                                </div>
+		                                <button type="button" role="button" class="btn btn-primary js_azeer_add_cart mt-1" title="Add to Cart">
+		                                    Add to Cart
+		                                </button>
+		                            </div>
+		                            
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+		    </t>
+		</template>
+
+		<template id="s_dynamic_snippet_products_azeer_project" name="Azeer Product List">
+		    <t t-call="website.s_dynamic_snippet_template">
+		        <t t-set="snippet_name" t-value="'s_dynamic_snippet_products'"/>
+		    </t>
+		</template>
+
+
+		<record id="azeer_theme.s_dynamic_snippet_products_000_js" model="ir.asset">
+		    <field name="name">Dynamic Azeer snippet products 000 JS</field>
+		    <field name="bundle">web.assets_frontend</field>
+		    <field name="path">azeer_theme/static/src/js/dynamic_product_list_snippet.js</field>
+		</record>
+
+	</data>
+</odoo>

@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','web','auth_signup','base_setup','website'],
+    'depends': ['base','web','auth_signup','base_setup','website','website_sale','portal_rating'],
 
     # always loaded
     'data': [
@@ -37,6 +37,9 @@
         'templates/footer.xml', 
         'templates/header.xml',
         'templates/website_portal_language_selector.xml',
+        'templates/website_sale_templates.xml',
+        'templates/portal_rating_templates.xml',
+        'templates/website_product_list_template.xml',
 
         #snippets
         'views/snippets/azeer_snippet_3.xml',
@@ -45,13 +48,20 @@
         'views/snippets/form_snippets.xml',
         #'views/snippets/carousel.xml', 
         'views/snippets/working_process.xml',
-        'views/snippets/snippets.xml',
         'views/snippets/carousel_duplicate.xml',
+        'views/snippets/banner_snippets.xml',
+        'views/snippets/about_us_snippets.xml',
+        'views/snippets/portfolio_snippets.xml',
+        'views/snippets/contact_us_page.xml',
+        'views/snippets/trending_now_snippets.xml',
+        'views/snippets/snippets.xml',
+        'views/snippets/product_snippet_template_data.xml',
 
         #Views
         'views/login_image_view.xml',
-        'views/res_config_settings_views.xml'
-    ],
+        'views/res_config_settings_views.xml',
+        'views/product_template_view.xml',
+        ],
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',

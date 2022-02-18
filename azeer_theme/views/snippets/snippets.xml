@@ -10,11 +10,11 @@
                         <!-- <t t-snippet="azeer_theme.azeer_carousel"
                         t-thumbnail="" /> -->
                         <t t-snippet="azeer_theme.azeer_carousel_2"
-                        t-thumbnail="" />  
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_image_gallery.svg" />  
 
                         <!-- El Azeer Services -->
                         <t t-snippet="azeer_theme.azeer_working_process"
-                        t-thumbnail="" />
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_references.svg" />
 
                         <!-- OVER +100 OF MEDICAL ANALYTICAL DEVICES READY TO USE ! -->
                         <t t-snippet="azeer_theme.azeer_snippets_3"
@@ -34,7 +34,40 @@
 
                         <!-- Keep In Touch -->
                         <t t-snippet="azeer_theme.azeer_s_website_form"
-                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_website_form.svg" />                        
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_website_form.svg" />
+
+                        <!-- Banner -->
+                        <t t-snippet="azeer_theme.azeer_banner_snippets"
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_cover.svg" />
+
+                        <!-- Portofolio Projects Snippets -->
+                        <t t-snippet="azeer_theme.azeer_project_with_shade_snippets"
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_features.svg" />
+                        <t t-snippet="azeer_theme.azeer_project_without_shade_snippets"
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_features.svg" />
+
+                        <!-- AboutUS Snippets-->
+                        <t t-snippet="azeer_theme.azeer_aboutus_story_block" 
+                            t-thumbnail="/website/static/src/img/snippets_thumbs/s_text_block.svg"/>
+                        <t t-snippet="azeer_theme.azeer_aboutus_values_block"
+                            t-thumbnail="/website/static/src/img/snippets_thumbs/s_features.svg"/>
+                        <t t-snippet="azeer_theme.azeer_aboutus_mission_block"
+                            t-thumbnail="/website/static/src/img/snippets_thumbs/s_cover.svg"/>
+                        <t t-snippet="azeer_theme.azeer_aboutus_statistics_block"
+                            t-thumbnail="/website/static/src/img/snippets_thumbs/s_features.svg"/>
+                        <t t-snippet="azeer_theme.azeer_aboutus_experience_block"
+                            t-thumbnail="/website/static/src/img/snippets_thumbs/s_timeline.svg"/>
+                            
+                        <!-- Contact-Us Snippets -->
+                        <t t-snippet="azeer_theme.azeer_contact_us_form"
+                        t-thumbnail="/website/static/src/img/snippets_thumbs/s_website_form.svg" />
+
+                        <!-- Trending Now -->
+                        <t t-snippet="azeer_theme.trending_now"
+                        t-thumbnail=""/>
+
+                        <!--  prodcut List default template  -->
+                        <t t-snippet="azeer_theme.s_dynamic_snippet_products_azeer_project" t-thumbnail="/website_sale/static/src/img/snippets_thumbs/s_dynamic_products.svg"/>
                     </div>
                 </div>
             </xpath>

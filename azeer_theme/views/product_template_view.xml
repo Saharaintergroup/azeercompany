@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record model="ir.ui.view" id="product_template_form_view_inherit">
+			<field name="name">product.template.product.website.form.inherits</field>
+			<field name="model">product.template</field>
+			<field name="inherit_id" ref="product.product_template_form_view"/>
+			<field name="arch" type="xml">
+				<xpath expr="//label[@for='purchase_ok']" position="after">
+					<field name="is_features"/>
+					<label for="is_features"/>
+				</xpath>
+				<xpath expr="//page[@name='sales']" position="after">
+					<page name="Features" string="Product Features" attrs="{'invisible': [('is_features','=',False)]}">
+						<field name="product_features"  mode="kanban" add-label="Add the Features">
+							<form>
+								<group>
+									<field name="title_1" string="Title"/>
+									<field name="description_1" string="Description"/>
+								</group>
+							</form>
+						</field>
+						<group>
+							<field name="image_features" widget="image"/>
+						</group>
+					</page>
+				</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>
+
