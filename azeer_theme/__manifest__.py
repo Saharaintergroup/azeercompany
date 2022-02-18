@@ -40,6 +40,7 @@
         'templates/website_sale_templates.xml',
         'templates/portal_rating_templates.xml',
         'templates/website_product_list_template.xml',
+        # 'templates/blog_latest_activity.xml',
 
         #snippets
         'views/snippets/azeer_snippet_3.xml',
@@ -55,6 +56,7 @@
         'views/snippets/contact_us_page.xml',
         'views/snippets/trending_now_snippets.xml',
         'views/snippets/snippets.xml',
+        'views/snippets/latest_activities_snippets.xml',
         'views/snippets/product_snippet_template_data.xml',
 
         #Views

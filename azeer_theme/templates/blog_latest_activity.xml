@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="blogs_nav" name="Blogs Bar Template Inherit" inherit_id="website_blog.blogs_nav">
+		<nav t-attf-class="navbar navbar-expand-sm navbar-light #{additionnal_classes}" position="before">
+			<h4>Latest Activities</h4>
+		</nav>
+		<nav t-attf-class="navbar navbar-expand-sm navbar-light #{additionnal_classes}" position="replace"/>
+	</template>
+</odoo>

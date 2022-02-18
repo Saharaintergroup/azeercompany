@@ -13,13 +13,13 @@
 		                    <t t-set="product_images" t-value="record._get_images()"/>
 		                    <div class="product_banner d-flex">
 			                    <t t-foreach="product_images" t-as="product_image">
-	                               <div t-attf-class="product_img_div {{'img_active primary_img' if product_image_first else 'img_inactive'}} " t-field="product_image.image_512" t-options='{"widget": "image", "qweb_img_responsive": False, "class": "d-flex img-fluid mx-auto rounded", "alt-field": "name"}' />
+	                               <div t-att-image-obj-id="product_image.id" t-attf-class="product_img_div {{'img_active primary_img' if product_image_first else 'img_inactive'}} " t-field="product_image.image_512" t-options='{"widget": "image", "qweb_img_responsive": False, "class": "d-flex img-fluid mx-auto rounded", "alt-field": "name"}' />
 	                            </t>
                             </div>	          
 	                    	<ol  t-attf-class="carousel-indicators position-static mx-auto my-0 text-right d-flex" >
 	                    	    <t t-foreach="product_images" t-as="product_image">
 	                    	    	<li  t-attf-class="m-1 mb-2 align-top active {{'active' if product_image_first else ''}}" data-target="#o-carousel-product-azeer" t-att-data-slide-to="str(product_image_index)" style="width: 90px; min-height: 100px;box-sizing: border-box;">
-		                    	        <div t-attf-class="js_select_image {{'primary_img' if product_image_first else ''}} "  t-field="product_image.image_128" t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_64_contain azeer_img", "alt-field": "name",}'/>
+		                    	        <div t-att-image-obj-id="product_image.id" t-attf-class="js_select_image {{'primary_img' if product_image_first else ''}} "  t-field="product_image.image_128" t-options='{"widget": "image", "qweb_img_responsive": False, "class": "o_image_64_contain azeer_img", "alt-field": "name",}'/>
 
 	                    	    	</li>
 	                    		</t>

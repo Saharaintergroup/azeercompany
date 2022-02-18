@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="trending_now" name="Trending Now">
+        <template id="s_masonry_block_trending_now" name="Trending Now">
             <section>
                 <div class="s_masonry_block o_mail_snippet_general" data-vcss="001" data-snippet="s_masonry_block">
                     <div class="container">
@@ -16,13 +16,13 @@
                             </div>
                             <div class="col-lg-6 s_col_no_resize o_masonry_grid_container">
                                 <div class="row h-100">
-                                    <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc2" data-name="Block" style="background-image: url(/azeer_theme/static/src/images/snippets/Medical-right.png);">
+                                    <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc2" data-name="Block" style="background-image: url('/azeer_theme/static/src/images/Group 15213.png');">
                                     </div>
-                                    <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc3" data-name="Block" style="background-image: url(/azeer_theme/static/src/images/snippets/services_1.png);">
+                                    <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc2" data-name="Block" style="background-image: url('/azeer_theme/static/src/images/Group 15214.png');">
                                     </div>
-                                    <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc4" data-name="Block" style="background-image: url(/azeer_theme/static/src/images/snippets/services_1.png);">
+                                    <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc2" data-name="Block" style="background-image: url('/azeer_theme/static/src/images/Group 15215.png');">
                                     </div>
-                                    <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc2" data-name="Block" style="background-image: url(/azeer_theme/static/src/images/snippets/services_2.png);">
+                                    <div class="col-lg-6 pt24 pb8 text-center o_cc o_cc2" data-name="Block" style="background-image: url('/azeer_theme/static/src/images/Group 15216.png');">
                                     </div>
                                 </div>
                             </div>
@@ -33,3 +33,22 @@
         </template>
     </data>
 </odoo>
+
+
+
+<!-- <template id="s_masonry_block_inherit" name="Azeer act">
+    <div class="s_masonry_block o_mail_snippet_general" data-vcss="001" data-snippet="s_masonry_block">
+        <div class="container">
+            <t t-call="mass_mailing.s_masonry_block_trending_now"/>
+        </div>
+    </div>
+</template> -->
+
+       <!--  <template id="s_masonry_block_options_inherit" inherit_id="website.s_masonry_block_options">
+            <xpath expr="//we-select[@data-name='masonry_template_opt']" position="inside">
+                <we-button title="Azeer Trending Now"
+                    data-select-template="azeer_theme.s_masonry_block_trending_now"
+                    data-select-data-attribute="trending"
+                    data-img="/website/static/src/img/snippets_options/masonry_template_reversed.svg"/>
+            </xpath>
+        </template> -->

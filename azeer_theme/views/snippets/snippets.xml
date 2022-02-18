@@ -63,7 +63,11 @@
                         t-thumbnail="/website/static/src/img/snippets_thumbs/s_website_form.svg" />
 
                         <!-- Trending Now -->
-                        <t t-snippet="azeer_theme.trending_now"
+                        <t t-snippet="azeer_theme.s_masonry_block_trending_now"
+                        t-thumbnail=""/>
+
+                        <!-- Latest Activities-->
+                        <t t-snippet="azeer_theme.s_blog_posts_azeer_temp"
                         t-thumbnail=""/>
 
                         <!--  prodcut List default template  -->

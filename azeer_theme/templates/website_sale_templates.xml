@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="website_sale.product" name="Product" track="1">
         <t t-set="combination" t-value="product._get_first_possible_combination()" />
@@ -158,25 +159,9 @@
             </div>
         </t>
     </template>
-    <template id="website_sale.product_comment" inherit_id="website_sale.product" active="False" customize_show="True" name="Discussion and Rating" priority="15">
-        <!-- <xpath expr="//div[@t-field='product.website_description']" position="after">
-            <div class="o_shop_discussion_rating" data-anchor='true'>
-                <section id="o_product_page_reviews" class="container pt32 pb32" data-anchor='true'>
-                    <a class="o_product_page_reviews_title d-flex justify-content-between text-decoration-none collapsed" type="button" data-toggle="collapse" data-target="#o_product_page_reviews_content" aria-expanded="false" aria-controls="o_product_page_reviews_content">
-                        <h3 class="mb32">Customer Reviews</h3>
-                        <i class="fa align-self-start"/>
-                    </a>
-                    <div id="o_product_page_reviews_content" class="collapse">
-                        <t t-call="portal.message_thread">
-                            <t t-set="object" t-value="product"/>
-                            <t t-set="display_rating" t-value="True"/>
-                            <t t-set="message_per_page" t-value="5"/>
-                            <t t-set="two_columns" t-value="true"/>
-                        </t>
-                    </div>
-                </section>
-            </div>
-        </xpath> -->
+    <template id="product_comment_inherit" inherit_id="website_sale.product_comment" active="False" customize_show="True" name="Discussion and Rating" priority="15">
+        <div class="o_shop_discussion_rating" position="replace">
+        </div>
     </template>
     <template id="cart_inherit" name="Shopping Cart" inherit_id="website_sale.cart">
         <div class="col-12 col-xl-8 oe_cart" position="replace">

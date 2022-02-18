@@ -135,7 +135,7 @@ const DynamicAzeerSnippetProducts = DynamicSnippetCarousel.extend({
         ev.preventDefault();
         var $link = $(ev.currentTarget);
         //var $img = $link.find("img");
-        var $data_oe_id = $link.attr("data-oe-id")
+        var $image_obj_id = $link.attr("image-obj-id")
         if ($link.hasClass("primary_img")){
             console.log('primary_img image')
             var $active_img = $('.product_banner').find('.img_active')
@@ -154,7 +154,7 @@ const DynamicAzeerSnippetProducts = DynamicSnippetCarousel.extend({
         var $img_divs = $('.product_banner').find('.product_img_div')
 
         $img_divs.each(function( index ,value) {
-            if ($(value).attr("data-oe-id")== $data_oe_id && !$(value).hasClass( "primary_img" )){
+            if ($(value).attr("image-obj-id")== $image_obj_id && !$(value).hasClass( "primary_img" )){
                 $(value).removeClass("img_inactive")
                 $(value).addClass("img_active")
             }

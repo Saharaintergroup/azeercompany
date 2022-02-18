@@ -1190,7 +1190,7 @@ section.s_features.project-section .grid-view {
     padding: 15px;
 }
 section.s_features.project-section {
-    padding: 50px 0;
+    padding: 50px 0 30px;
 }
 section.s_features.project-section.with-shade .grid-view .grid-content {
     padding-top: 80px;
@@ -1219,10 +1219,13 @@ section.s_features.project-section .grid-view .grid-content .list .btn.btn-see-m
 }
 section.s_features.project-section .grid-view .grid-content .list .text-break.o_default_snippet_text {
     text-align: center;
-    padding: 20px;
-    color: #ccc;
+    padding: 10px;
+    color: #666;
     font-size: 14px;
     line-height: 20px;
+    min-height: 180px;
+    display: inline-flex;
+    align-items: center;
 }
 section.s_features.project-section .grid-view .grid-content .list .date {
     color: var(--site_blue);
@@ -1256,9 +1259,10 @@ section.section.o_colored_level.common-banner .container.text-center .main-title
     margin-bottom: 10px;
 }
 section.section.o_colored_level.common-banner .container.text-center .sub-title {
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     letter-spacing: 1px;
+    opacity: 0.8;
 }
 /*---------- Portfolio *--------------*/
 /*---------- aboutus -------------*/
@@ -1386,6 +1390,9 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     padding: 10px 10px 10px 35px;
     position: relative;
 }
+.contactus-page .contactus-right ul li > span {
+    opacity: 0.7;
+}
 .contactus-page .contactus-right ul li.phone:before {
     content: '';
     position: absolute;
@@ -1393,7 +1400,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     height: 20px;
     left: 0;
     top: 10px;
-    background: url(../images/phone.png) no-repeat center;
+    background: url(../images/phone-call.svg) no-repeat center;
     background-size: contain;
 }
 .contactus-page .contactus-right ul li.location:before {
@@ -1403,7 +1410,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     height: 20px;
     left: 0;
     top: 10px;
-    background: url(../images/location.png) no-repeat center;
+    background: url(../images/pin.svg) no-repeat center;
     background-size: contain;
 }
 .contactus-page .contactus-right ul li.mail:before {
@@ -1413,7 +1420,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     height: 20px;
     left: 0;
     top: 10px;
-    background: url(../images/mail.png) no-repeat center;
+    background: url(../images/mail.svg) no-repeat center;
     background-size: contain;
 }
 .contactus-page .contactus-page-form .col-sm {
@@ -1450,6 +1457,13 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     border-bottom: 1px solid var(--secondary);
     color: var(--secondary);
 }
+.s_product_product_azeer_banner .card .o_carousel_product_card_body > a h1 {
+    font-size: 26px;
+    letter-spacing: 0;
+    font-weight: 600;
+    margin: 0;
+    line-height: 22px;
+}
 .s_product_product_azeer_banner .card .o_carousel_product_card_body .d-flex.align-items-center {
     width: 100%;
     justify-content: space-between;
@@ -1485,23 +1499,31 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     line-height: 24px;
 }
 .o_website_rating_static .fa::before {
-  font-size: 22px;
+  font-size: 18px;
 }
 .s_product_product_azeer_banner .card .o_carousel_product_card_body .d-flex.align-items-center .text-primary h6 {
-    font-size: 20px;
+    font-size: 18px;
     margin: 0 auto;
     padding-right: 5px;
     color: var(--secondary);
+    font-weight: 600;
 }
 #products_grid .products_header.form-inline {
     margin: 0 auto !important;
-    padding: 30px 0;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    padding: 25px 0;
+    border-top: 1px solid #ededed;
+    border-bottom: 1px solid #ededed;
     justify-content: space-between !important;
 }
 #products_grid .products_header.form-inline h1 {
     margin: 0;
+    font-size: 24px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+#products_grid .products_header.form-inline .o_sortby_dropdown.dropdown.dropdown_sorty_by {
+    padding: 0 !important;
+    position: relative;
 }
 #products_grid .products_header.form-inline .o_sortby_dropdown.dropdown.dropdown_sorty_by .dropdown-toggle {
     background-color: #CCF2F0 !important;
@@ -1509,6 +1531,29 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     padding: 8px 25px !important;
     color: #45C5CD !important;
     font-weight: 600;
+    padding-left: 40px !important;
+    min-width: 180px;
+    border-radius: 10px;
+}
+#products_grid .products_header.form-inline .o_sortby_dropdown.dropdown.dropdown_sorty_by .dropdown-toggle::after {
+    content: none !important;
+}
+#products_grid .products_header.form-inline .o_sortby_dropdown.dropdown.dropdown_sorty_by .dropdown-toggle::before {
+    content: '';
+    background-image: url(../images/sort_by.png);
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 8px;
+    left: 40px;
+    z-index: 9;
+    background-size: 100%;
+}
+#products_grid .products_header.form-inline .o_sortby_dropdown.dropdown.dropdown_sorty_by .dropdown-toggle .d-none.d-lg-inline {
+    line-height: normal;
+    position: relative;
+    top: -1px;
+    display: inline-flex !important;
 }
 #products_grid .card-body.oe_product_image {
     padding: 10px !important;
@@ -1517,7 +1562,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     margin-bottom: 50px;
 }
 #products_grid .o_wsale_product_information_text .o_website_rating_static {
-    margin-top: 15px;
+    margin-top: 10px;
 }
 #products_grid .card.oe_product_cart .d-block {
     background: #F6F9FB;
@@ -1525,9 +1570,8 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
 }
 #products_grid .card.oe_product_cart .oe_product_image img {
     height: 100%;
-    width: 80%;
+    max-width: 185px;
     margin: 10%;
-    object-fit: scale-down;
 }
 #products_grid .o_wsale_products_grid_table_wrapper {
     margin: 0 auto;
@@ -1538,12 +1582,12 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
   position: relative;
 }
 #products_grid .o_wsale_product_information_text {
-    padding: 15px !important;
+    padding: 8px 15px !important;
     text-align: center;
 }
 #products_grid .o_wsale_products_item_title {
     display: block;
-    padding: 15px;
+    padding: 10px 0;
     text-align: center;
     font-size: 18px;
     font-weight: 600;
@@ -1584,6 +1628,21 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
 }
 .products_pager .page-item a.page-link {
     color: var(--primary);
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.products_pager .page-item {
+    width: 40px;
+    height: 40px;
+    margin: 4px;
+}
+.products_pager.form-inline {
+    margin-bottom: 50px;
 }
 #wrapwrap #products_grid .o_wsale_products_grid_table_wrapper > .table .o_wsale_product_grid_wrapper > *.card {
   border-bottom: 0;
@@ -1604,18 +1663,17 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     text-align: center;
 }
 #product_detail.oe_website_sale h1[itemprop="name"] {
-    font-size: 30px !important;
+    font-size: 26px !important;
     font-weight: 600;
-    letter-spacing: 2px;
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 #product_details {
     position: relative;
 }
 #product_details .amount_txt {
     position: absolute;
-    top: 58px;
+    top: 48px;
     left: 0;
     right: 0;
     width: 80%;
@@ -1626,10 +1684,12 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
 #product_details .amount_txt .pricetxt {
     display: inline-flex;
     margin-bottom: 0 !important;
+    font-size: 18px;
+    font-weight: 600;
 }
 #product_details .amount_txt .oe_price {
     color: var(--primary);
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 600;
 }
 #product_details .o_product_page_reviews_link {
@@ -1646,39 +1706,52 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     max-width: 80%;
 }
 .css_quantity input.form-control.quantity {
-  background-color: transparent;
-  border: 0;
+    background-color: transparent;
+    border: 0;
+    height: 40px;
+    font-weight: 600;
 }
 .o_carousel_product_card .css_quantity .js_add_cart_json {
     background-color: transparent;
-    width: 46px;
-    height: 46px;
+    width: 40px;
+    height: 40px;
     border: 1px solid var(--site_grey);
     padding: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px !important;
+    border-radius: 10px !important;
     min-width: auto;
 }
 .css_quantity button.btn.btn-primary.js_azeer_add_cart {
     margin: 0 !important;
     margin-left: 15px !important;
-    padding: 8px 30px;
-    min-height: 46px;
+    padding: 6px 30px;
+    height: 40px;
     background-color: var(--primary);
     color: #fff !important;
     font-size: 16px;
     font-weight: 600;
+    min-width: 165px;
+    border-radius: 10px;
+    line-height: 25px;
 }
 .o_carousel_product_card .css_quantity .js_add_cart_json .fa {
     font-size: 14px;
     font-weight: normal;
-    color: var(--primary);
+    color: var(--site_grey);
 }
 .o_carousel_product_card .css_quantity .js_add_cart_json:active {
     background-color: transparent !important;
-    border: 1px solid var(--site_grey);
+    box-shadow: none !important;
+    border: 1px solid var(--primary) !important;
+}
+.o_carousel_product_card .css_quantity .js_add_cart_json:focus {
+    box-shadow: none !important;
+    outline: 0;
+}
+.o_carousel_product_card .css_quantity .js_add_cart_json:active .fa {
+    color: var(--primary);
 }
 .o_carousel_product_card .carousel-indicators.text-right.d-flex {
     display: block !important;
@@ -1688,7 +1761,14 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
 }
 .o_carousel_product_card .product_banner {
     max-width: 450px;
-    justify-content: flex-end;
+    justify-content: center;
+    max-height: 90vh;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+}
+.o_carousel_product_card .product_banner img {
+  max-height: 100%;
 }
 .o_carousel_product_card .carousel-indicators.position-static.text-right.d-flex {
     display: block !important;
@@ -1723,20 +1803,24 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     outline: 0;
     box-shadow: none;
 }
+#product_details .js_product .css_quantity .js_add_cart_json:hover {
+  border: 1px solid var(--primary);
+}
 #product_detail #o-carousel-product .o_carousel_product_indicators .carousel-indicators li {
   border-radius: 10px;
 }
 #product_detail #o-carousel-product .o_carousel_product_indicators .carousel-indicators li img {
     padding: 5px;
 }
-#product_detail #o-carousel-product .carousel-item {
+/*#product_detail #o-carousel-product .carousel-item {
     border: 2px solid var(--site_grey);
     border-radius: 20px;
     margin-bottom: 15px;
-}
+}*/
 #product_details .js_product .css_quantity {
     float: left;
     width: auto;
+    margin: 0 !important;
 }
 .product-carousel #o-carousel-product {
     transition: top 200ms;
@@ -1744,18 +1828,37 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     margin-right: 15px !important;
     margin: 0 auto;
 }
+#o-carousel-product .carousel-outer {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
 #o-carousel-product .carousel-outer .carousel-inner img {
     padding: 50px;
+}
+.product-carousel #o-carousel-product .carousel-control-prev > span, .product-carousel #o-carousel-product .carousel-control-next > span {
+  border: 0;
+}
+#o-carousel-product .carousel-control-next .fa:hover, #o-carousel-product .carousel-control-prev .fa:hover {
+    color: var(--primary);
 }
 #product_details .amount_txt .product_price h3.css_editable_mode_hidden,
 #product_details .amount_txt .product_price {
     margin: 0 auto !important;
+}
+#product_detail .row:first-child {
+    display: none;
+}
+#product_detail .row .col-md-6.mt-md-4 {
+    margin-top: 80px !important;
 }
 .s_text_block.fw_banner {
     padding: 0 !important;
     padding-right: 0 !important;
     position: relative;
     margin-top: 50px;
+    max-height: 250px;
+    display: block;
+    overflow: hidden;
 }
 .s_text_block.fw_banner .main-title {
     display: inline-flex;
@@ -1773,12 +1876,15 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     padding: 100px 0;
     position: relative;
 }
+.container.s_timeline_line.flow_section {
+    margin-bottom: 40px;
+}
 .s_timeline_line.flow_section .s_timeline_card .card-body > span {
     color: var(--primary);
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
     display: block;
-    padding-bottom: 10px;
+    padding-bottom: 0;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -1791,8 +1897,8 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     float: right;
 }
 .s_timeline_line.flow_section .s_timeline_card .card-body .card-text {
-    font-size: 18px;
-    padding: 10px 0;
+    font-size: 16px;
+    padding: 6px 0;
     color: var(--site_grey);
     position: relative;
 }
@@ -1812,7 +1918,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     content: '';
     width: 113px;
     min-height: 200px;
-    right: -190px;
+    right: -230px;
     background-image: url(../images/left_top_flow.png);
     top: 0;
     background-size: 100%;
@@ -1821,18 +1927,18 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     position: absolute;
     content: '';
     width: 100px;
-    height: 9px;
-    left: -135px;
+    min-height: 250px;
+    left: -180px;
     background-image: url(../images/right_bottom_flow.png);
-    top: -170px;
-    background-size: cover;
+    top: -224px;
+    background-size: 100%;
     background-position: bottom;
 }
 .s_timeline_line.flow_section .s_timeline_row:nth-child(3) .card-body > span:before {
     background-image: url(../images/left-dir.png);
     width: 180px;
     height: 32px;
-    right: -110px;
+    right: -150px;
     background-size: 160px 28px;
     min-height: auto;
     background-repeat: no-repeat;
@@ -1846,6 +1952,9 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     top: -6px;
     background-repeat: no-repeat;
     background-size: 160px 28px;
+}
+.s_timeline_line.flow_section .s_timeline_row.d-block.d-md-flex.flex-row:first-child {
+    min-height: 280px;
 }
 .s_text_block.fw_banner img {
     max-width: 100%;
@@ -1867,12 +1976,43 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
 }
 .s_timeline_line.flow_section .s_timeline_row.flex-row-reverse .card-body {
     position: relative;
-    top: 80px;
+    top: -50px;
+}
+.s_timeline_line.flow_section .d-md-flex:nth-child(3) .s_timeline_card .card-body {
+    position: relative;
+    top: -40px;
 }
 .s_timeline_line.flow_section .d-md-flex.flex-row-reverse:nth-child(4) .s_timeline_card .card-body {
     max-width: 80%;
     margin-left: 15%;
     float: left;
+    top: 100px;
+}
+#product_details #add_to_cart_wrap #add_to_cart {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    height: 40px;
+    padding: 8px 25px !important;
+    border-radius: 10px !important;
+    line-height: normal !important;
+    font-size: 16px;
+    margin: 0 auto !important;
+    min-width: 180px;
+}
+#product_details #add_to_cart_wrap {
+    display: inline-flex !important;
+    overflow: hidden;
+    height: 100%;
+    margin-left: 15px !important;
+}
+#product_details .js_product .css_quantity .js_add_cart_json {
+    height: 40px;
+    width: 40px;
+    border: 1px solid var(--site_grey);
+    background: transparent;
+    border-radius: 10px;
+    line-height: normal;
+    color: var(--site_grey);
 }
 /*---------- cart page -------------*/
 #cart_products.table thead th {
@@ -1969,6 +2109,10 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     display: block;
     overflow: hidden;
     margin-bottom: 20px;
+    margin-top: 60px;
+}
+.oe_website_sale #o_cart_summary, .oe_website_sale .oe_cart {
+    margin-bottom: 50px;
 }
 #cart_total td.text-xl-right {
     text-align: right !important;
@@ -2004,7 +2148,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     padding: 5px !important;
 }
 .o_connected_user button#portal_searchbar_sortby {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 .o_connected_user main {
     background-color: #f5f5f5;
@@ -2043,6 +2187,24 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
 }
 .o_connected_user #o_portal_navbar_content .form-inline .btn-group .dropdown-menu .dropdown-item.active {
     background-color: var(--primary);
+}
+.o_connected_user .o_portal_wrap .o_portal_my_doc_table th {
+    border-bottom: 1px solid #dee2e6;
+}
+.o_portal_sidebar #sidebar_content.card .btn.btn-primary, .mycart-popover .popover-body .btn.btn-primary {
+  background-color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
+.o_wsale_my_cart .badge-primary {
+    color: #fff;
+    background-color: var(--primary);
+}
+.record_pager.btn-group a.btn.btn-link {
+    padding: 0.375rem 0.5rem;
+}
+.record_pager.btn-group a.btn.btn-link {
+    padding: 0.375rem 0.5rem;
+    color: var(--primary);
 }
 @media (min-width: 768px) {
   .container, #owl-demo .owl-dots, .s_carousel .carousel-indicators, .container.s_timeline_line.flow_section {
@@ -2163,7 +2325,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     width: 70%;
   }
   .s_timeline_line.flow_section .s_timeline_row .s_timeline_card .card-body > span:before {
-    right: -115px;
+    right: -155px;
   }
   .s_timeline_line.flow_section .d-md-flex.flex-row-reverse:nth-child(4) .s_timeline_card .card-body {
     margin-left: 35%;
@@ -2319,12 +2481,12 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     width: 50%;
     }
     .s_timeline_line.flow_section .s_timeline_row .s_timeline_card .card-body > span:before {
-    right: -110px;
+    right: -135px;
     min-height: 240px;
     }
     .s_timeline_line.flow_section .s_timeline_row.flex-row-reverse .s_timeline_card .card-body > span:before {
-        top: -212px;
-        left: -105px;
+        top: -222px;
+        left: -130px;
     }
     .s_timeline_line.flow_section .s_timeline_row:nth-child(3) .card-body > span:before,
     .s_timeline_line.flow_section .s_timeline_row.flex-row-reverse:nth-child(2) .s_timeline_card .card-body > span:before {
@@ -2335,6 +2497,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
         margin-left: 50%;
         float: right;
         max-width: 50%;
+        top: 80px;
     }
     #product_details .js_product #add_to_cart_wrap {
         padding: 0;
@@ -2365,6 +2528,16 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     .o_portal_wrap #o_portal_navbar_content {
       margin: 0.5rem auto 0;
     }
+    #products_grid .products_header.form-inline .o_sortby_dropdown.dropdown.dropdown_sorty_by .dropdown-toggle::before {
+      left: 22px;
+    }
+    #products_grid .products_header.form-inline .o_sortby_dropdown.dropdown.dropdown_sorty_by .dropdown-toggle .fa-sort-amount-asc {
+      position: relative;
+      right: -10px;
+  }
+  .s_text_block.fw_banner .main-title .title1 {
+    font-size: 34px;
+  }
 }
 @media (max-width: 767px) {
   .container {
@@ -2454,7 +2627,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
   /*--------------- portfolio -----------*/
   section.s_features.project-section .grid-view .grid-content .col-lg-4.list {
     flex: 100%;
-    max-width: 55%;
+    max-width: 330%;
     padding: 20px 30px;
     border: 2px solid var(--site_blue);
     border-radius: 50%;
@@ -2526,12 +2699,12 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
         display: block;
         padding: 10px 0;
         text-align: center;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 600;
         margin-bottom: 0 !important;
     }
     #products_grid .o_wsale_product_information_text {
-        padding: 10px !important;
+        padding: 0 10px !important;
         text-align: center;
     }
     #products_grid .o_wsale_product_information_text .o_website_rating_static {
@@ -2541,11 +2714,27 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
         font-size: 14px
     }
     .product-price-list-azeer h5 {
-        margin: 0 auto;
-        padding-right: 5px;
-        font-size: 16px;
-        line-height: inherit;
-    }
+      margin: 0 auto;
+      padding-right: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      position: relative;
+      top: 1px;
+  }
+  #products_grid .card.oe_product_cart .oe_product_image img {
+    max-width: 100px;
+  }
+  .product-price-list-azeer {
+    margin: 5px 0;
+  }
+  .s_timeline_line.flow_section .d-md-flex.flex-row-reverse:nth-child(4) .s_timeline_card .card-body,
+  .s_timeline_line.flow_section .d-md-flex:nth-child(3) .s_timeline_card .card-body,
+  .s_timeline_line.flow_section .s_timeline_row.flex-row-reverse .card-body {
+    top: 0;
+  }
+  .oe_website_sale .oe_cart {
+    margin-bottom: 25px;
+  }
 }
 @media (max-width: 480px) {
   .owl-carousel .owl-item img {
@@ -2617,7 +2806,6 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
   }
   #product_details .js_product #add_to_cart_wrap #add_to_cart {
     width: 100%;
-    margin: 5px auto !important;
 }
 .s_timeline_line.flow_section {
     padding: 40px 0;
@@ -2644,7 +2832,13 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     }
     #products_grid .products_header.form-inline h1 {
         margin: 0;
-        font-size: 24px;
+        font-size: 20px;
+    }
+    #products_grid .products_header.form-inline .o_sortby_dropdown.dropdown.dropdown_sorty_by .dropdown-toggle {
+      min-width: 140px;
+    }
+    #products_grid .products_header.form-inline .o_sortby_dropdown.dropdown.dropdown_sorty_by .dropdown-toggle::before {
+      left: 10px;
     }
 }
 
@@ -2653,4 +2847,10 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
 }
 .img_inactive{
   display: none;
+}
+header#top + main {
+    padding-top: 0 !important;
+}
+header#top {
+    transform: none !important;
 }
