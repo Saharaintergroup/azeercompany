@@ -1958,6 +1958,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
 }
 .s_text_block.fw_banner img {
     max-width: 100%;
+    width: 100%;
 }
 .flow_section .middle-image img {
     background-color: #F6F9FB;
@@ -2013,6 +2014,9 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     border-radius: 10px;
     line-height: normal;
     color: var(--site_grey);
+}
+#product_details .js_product.js_main_product {
+    margin: 25px 0 !important;
 }
 /*---------- cart page -------------*/
 #cart_products.table thead th {
@@ -2206,13 +2210,17 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
     padding: 0.375rem 0.5rem;
     color: var(--primary);
 }
+.nav-pills .nav-link {
+  background-color: var(--primary) !important;
+}
 @media (min-width: 768px) {
-  .container, #owl-demo .owl-dots, .s_carousel .carousel-indicators, .container.s_timeline_line.flow_section {
+  .container, #owl-demo .owl-dots, .s_carousel .carousel-indicators, .container.s_timeline_line.flow_section,
+  section.s_features.values-block .grid-view.container {
     max-width: 720px;
   }
 }
 @media (min-width: 992px) {
-  .container, #owl-demo .owl-dots, .s_carousel .carousel-indicators {
+  .container, #owl-demo .owl-dots, .s_carousel .carousel-indicators, section.s_features.values-block .grid-view.container {
     max-width: 960px;
   }
   header .navbar .dropdown-menu {
@@ -2229,7 +2237,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
   }
 }
 @media (min-width: 1200px) {
-  .container, .container.s_timeline_line.flow_section {
+  .container, .container.s_timeline_line.flow_section, section.s_features.values-block .grid-view.container {
     max-width: 1170px;
   }
   #owl-demo .owl-dots, .s_carousel .carousel-indicators {
@@ -2734,6 +2742,12 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] {
   }
   .oe_website_sale .oe_cart {
     margin-bottom: 25px;
+  }
+  .s_timeline_line.flow_section .s_timeline_row.d-block.d-md-flex.flex-row:first-child {
+    min-height: auto;
+  }
+  #product_detail .row .col-md-6.mt-md-4, .oe_website_sale .wizard {
+    margin-top: 0 !important;
   }
 }
 @media (max-width: 480px) {

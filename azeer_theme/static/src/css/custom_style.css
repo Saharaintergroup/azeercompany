@@ -86,8 +86,8 @@
 .values-block .grid-content .l-text {
     padding: 5px 0 15px;
     color: var(--site_grey);
-    font-size: 12px;
-    max-width: 60%;
+    font-size: 14px;
+    max-width: 70%;
     margin: 0 auto;
     line-height: 20px;
 }
