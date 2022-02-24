@@ -1,57 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<data>
-		<template id="azeer_project_with_shade_snippets" name="Azeer Portfolio Projects With shade">
-            <section class="s_features project-section with-shade">
+    <data>
+        <template id="s_portfolio_block" name="Portfolio Shades">
+            <section class="s_features project-section" data-vcss="001">
                 <div class="container grid-view">
-                    <div class="row grid-content">
-                        <div class="col-lg-4 text-center list first">
-                            <div class="date">2021/2022</div>
-                            <div class="project-name">Project Name</div>
-                            <div class="text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
-                        </div>
-                        <div class="col-lg-4 text-center list first">
-                           <div class="date">2021/2022</div>
-                            <div class="project-name">Project Name</div>
-                            <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
-                        </div>
-                        <div class="col-lg-4 text-center list first">
-                            <div class="date">2021/2022</div>
-                            <div class="project-name">Project Name</div>
-                            <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
-                        </div>
-                    </div>
+                    <t t-call="azeer_theme.azeer_portfolio_without_snippets"/>
                 </div>
             </section>
         </template>
-        <template id="azeer_project_without_shade_snippets" name="Azeer Portfolio Projects Without shade">
-            <section class="s_features project-section without-shade">
-                <div class="container grid-view">
-                    <div class="row grid-content">
-                        <div class="col-lg-4 text-center list first">
-                            <div class="date">2021/2022</div>
-                            <div class="project-name">Project Name</div>
-                            <div class="text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
-                        </div>
-                        <div class="col-lg-4 text-center list first">
-                           <div class="date">2021/2022</div>
-                            <div class="project-name">Project Name</div>
-                            <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
-                        </div>
-                        <div class="col-lg-4 text-center list first">
-                            <div class="date">2021/2022</div>
-                            <div class="project-name">Project Name</div>
-                            <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
-                            <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
-                        </div>
-                    </div>
+        <template id="azeer_portfolio_with_snippets" name="Azeer Portfolio With Shade" groups="base.group_user">
+            <div class="row grid-content with-shade">
+                <div class="col-lg-4 text-center list first">
+                    <div class="date">2021/2022</div>
+                    <div class="project-name">Project Name</div>
+                    <div class="text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
                 </div>
-            </section>
+                <div class="col-lg-4 text-center list first">
+                    <div class="date">2021/2022</div>
+                    <div class="project-name">Project Name</div>
+                    <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                </div>
+                <div class="col-lg-4 text-center list first">
+                    <div class="date">2021/2022</div>
+                    <div class="project-name">Project Name</div>
+                    <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                </div>
+            </div>
         </template>
-	</data>
+        <template id="azeer_portfolio_without_snippets" name="Azeer Portfolio Without Shade" groups="base.group_user">
+            <div class="row grid-content without-shade">
+                <div class="col-lg-4 text-center list first">
+                    <div class="date">2021/2022</div>
+                    <div class="project-name">Project Name</div>
+                    <div class="text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                </div>
+                <div class="col-lg-4 text-center list first">
+                    <div class="date">2021/2022</div>
+                    <div class="project-name">Project Name</div>
+                    <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                </div>
+                <div class="col-lg-4 text-center list first">
+                    <div class="date">2021/2022</div>
+                    <div class="project-name">Project Name</div>
+                    <div class="text-break list first">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+                    <a href="#" class="btn btn-see-more btn-outline-info">See more</a>
+                </div>
+            </div>
+        </template>
+        <template id="portfolio_options" name="Portfolio Options" inherit_id="website.snippet_options">
+            <xpath expr="//div[@data-js='layout_column']" position="after">
+                <div data-js="PortLayout" data-selector=".project-section">
+                    <we-select string="PortFolioTemplates"
+                        data-name="port_shades"
+                        data-attribute-name="PortTemplate"
+                        >
+                        <we-button title="Withshade"
+                            data-select-template="azeer_theme.azeer_portfolio_with_snippets"
+                            data-select-data-attribute="Withshade"
+                            data-img="/website/static/src/img/snippets_options/masonry_template_texts_image_texts.svg"/>
+                        <we-button title="Withoutshade"
+                            data-select-template="azeer_theme.azeer_portfolio_without_snippets"
+                            data-select-data-attribute="Withoutshade"
+                            data-img="/website/static/src/img/snippets_options/masonry_template_alternate_text_image_text.svg"
+                            />
+                    </we-select>
+                </div>
+            </xpath>
+        </template>
+    </data>
 </odoo>

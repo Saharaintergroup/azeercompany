@@ -6,7 +6,7 @@
                 <div class="section">
                     <div>
                     	<div class="row">
-                    		<div class="contact-form contactus-page-form col-lg-8">
+                    		<div class="contact-form contactus-page-form col-md-8 col-lg-8">
                                 <div><span>Leave A Message !</span></div>
                                 <form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-pre-fill="true">
                                     <div class="s_website_form_rows row s_col_no_bgcolor">
@@ -18,15 +18,17 @@
                                   </div>
                               </form>
                           </div>
-                          <section class="col-lg-4 contactus-right">
-                             <div class="contact-info">
+                          <section class="col-md-4 col-lg-4 contactus-right">
+                            <div class="contact-info">
                                 <div class="title">Contact Details</div>
-                                <p>1st Place</p>
-                                <ul>
-                                    <li class="phone"><span>102- 23239348 - 102-2312312</span></li>
-                                    <li class="location"><span>Idris Neighborhood - Hollow Libya</span></li>
-                                    <li class="mail"><span>El-Azeer21@Gmail.Com</span></li>
-                                </ul>
+                                <div class="inner_div">
+                                    <p>1st Place</p>
+                                    <ul>
+                                        <li class="phone"><span>102- 23239348 - 102-2312312</span></li>
+                                        <li class="location"><span>Idris Neighborhood - Hollow Libya</span></li>
+                                        <li class="mail"><span>El-Azeer21@Gmail.Com</span></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="contact-info">
                                 <p>2nd Place</p>

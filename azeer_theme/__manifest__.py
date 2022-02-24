@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','web','auth_signup','base_setup','website','website_sale','portal_rating'],
+    'depends': ['base','web','auth_signup','base_setup','website','website_sale','portal_rating','website_blog','website_crm_partner_assign'],
 
     # always loaded
     'data': [
@@ -40,7 +40,8 @@
         'templates/website_sale_templates.xml',
         'templates/portal_rating_templates.xml',
         'templates/website_product_list_template.xml',
-        # 'templates/blog_latest_activity.xml',
+        'templates/blog_latest_activity.xml',
+        'templates/website_partner_templates.xml',
 
         #snippets
         'views/snippets/azeer_snippet_3.xml',
@@ -90,6 +91,7 @@
             'azeer_theme/static/src/js/bootstrap.min.js',   
             'azeer_theme/static/src/js/jquery.sticky.js',   
             'azeer_theme/static/src/js/main.js',
+            'azeer_theme/static/src/js/portfolio.js',
         ]
     }
 }

@@ -32,12 +32,16 @@
     font-weight: bold;
     padding-right: 5px;
     line-height: normal;
+    position: relative;
+    z-index: 9;
 }
 .main-title .title2 {
     color: var(--primary);
     font-size: 32px;
     font-weight: bold;
     line-height: normal;
+    position: relative;
+    z-index: 9;
 }
 .story-block .main-title {
     padding-bottom: 30px;
@@ -115,11 +119,11 @@
     font-weight: 600;
     margin: 10px;
 }
-.mission-block .l-text {
+.mission-block .l-text, .visions-block .l-text {
     color: var(--site_grey);
     font-size: 18px;
-    max-width: 50%;
-    margin: 0 auto;
+    max-width: 70%;
+    margin: 40px auto;
 }
 .statistics-block .l-text {
     color: var(--site_grey);
@@ -201,6 +205,10 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] .main-title {
     top: 11px;
     background-size: 100%;
 }
+.o_rtl .s_timeline .s_timeline_row .s_timeline_card .card-sub-title:before {
+    transform: rotate(180deg) !important;
+}
+
 .s_timeline .s_timeline_row.flex-row-reverse .s_timeline_content {
     position: relative;
 }
@@ -220,6 +228,54 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] .main-title {
     font-size: 16px;
     padding: 5px 0;
     color: var(--site_grey);
+}
+
+
+section.visions-block {
+    padding: 100px 0;
+    background-image: url(../images/vision_bg.png) !important;
+    margin: 70px auto;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.about-ceo-block {
+    margin: 30px auto;
+}
+.about-ceo-block .text-center {
+    text-align: left !important;
+    padding: 15px 0 25px;
+}
+.about-ceo-block .l-text {
+    font-size: 15px;
+    padding: 0 10px;
+}
+.about-ceo-block .l-text.blue-line:before {
+    content: '';
+    width: 4px;
+    height: 35px;
+    background-color: var(--primary);
+    position: absolute;
+    left: -2px;
+    top: 4px;
+}
+.about-ceo-block .l-text.blue-line {
+    position: relative;
+}
+section.mission-block {
+    padding: 180px 0;
+    margin: 50px 0;
+    background-image: url(../images/our_mission_bg.png) !important;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center;
+}
+.o_rtl section.mission-block {
+    background-image: url(../images/ar_our_mission_bg.png) !important;
+}
+@media (max-width: 1450px) {
+    section.mission-block {
+        background-size: 80%;
+    }
 }
 @media (max-width: 991px) {
     .values-block .grid-content, .statistics-block .grid-content {
@@ -246,6 +302,13 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] .main-title {
     }
     section.mission-block[data-snippet="azeer_aboutus_mission_block"] {
         padding: 40px 0;
+    }
+    .statistics-block .grid-content .list.first.o_colored_level:nth-child(2):after, .statistics-block .grid-content .list.first.o_colored_level:nth-child(2):before {
+        display: none;
+        content: none;
+    }
+    section.mission-block {
+        background-size: 90%;
     }
 }
 @media (max-width: 767px) {
@@ -274,6 +337,24 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] .main-title {
     }
     .values-block .grid-content .t-image + h4 {
         font-size: 16px;
+    }
+    .mission-block .l-text, .visions-block .l-text {
+        max-width: 90%;
+        font-size: 14px;
+    }
+    section.visions-block {
+        padding: 50px 0;
+        margin: 30px auto;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    section.mission-block {
+        background-size: contain;
+        padding: 40px 0;
+        margin: 30px 0;
+    }
+    .statistics-block .l-text {
+        max-width: 90%;
     }
 }
 @media (max-width: 480px) {

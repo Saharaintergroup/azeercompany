@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- Page -->
+	<!-- We don't need to use below template we can remove the text from odoo website editor -->
+	<template id="website_crm_partner_assign.layout" name="Partners Layout">
+	    <t t-call="website.layout">
+	        <t t-set="additional_title">Resellers</t>
+	        <div id="wrap">
+	            <div class="oe_structure" id="oe_structure_website_crm_partner_assign_layout_1"/>
+	            
+	               
+	                    <t t-out="0" />
+	                
+	            
+	            <div class="oe_structure" id="oe_structure_website_crm_partner_assign_layout_2"/>
+	        </div>
+	    </t>
+	</template>
+
+	<!-- Delete the country template -->
+	<delete id="website_crm_partner_assign.ref_country" model="ir.ui.view" />
+
+	<template id="website_crm_partner_assign.index" name="Azeer Find Resellers">
+	    	 <t t-call="website_crm_partner_assign.layout">
+	    	 <!-- <div id="wrap">
+		    	<div class="oe_structure"/> -->
+				<!-- if it is no partners --> 
+				<div class="container">
+			    	<p class="azeer-no-partner" t-if="not partners">No result found</p>
+				</div>
+			    <!-- Loop the partners -->
+			    <t t-foreach="partners" t-as="partner">
+			    	<div class="partner-row-container container mt16">
+				    	<div class="row">
+					        <div class="col-lg-6 mb32 azeer-partner-left">
+					            <!-- Partner name tag -->
+					            <a class="azeer-partner-name" t-attf-href="/partners/#{slug(partner)}?#{current_grade and 'grade_id=%s&amp;' % current_grade.id}#{current_country and 'country_id=%s' % current_country.id}">
+					                <span t-field="partner.display_name"/>
+					            </a>
+					            <!-- website short description --> 
+					            <div class="azeer-partner-short-description" t-field="partner.website_short_description"/>
+					            <!-- website full description -->         
+					            <div class="azeer-partner-full-description" t-field="partner.website_description"/>
+					            <!-- see more button -->
+					             <a class="azeer-partner-seemore text-center" t-attf-href="/partners/#{slug(partner)}?#{current_grade and 'grade_id=%s&amp;' % current_grade.id}#{current_country and 'country_id=%s' % current_country.id}">
+					                <span>See More</span>
+					            </a>
+					        </div>
+
+					        <!-- Partner right area -->
+					        <div class="col-lg-6 azeer-partner-right">
+					        	<a  t-attf-href="/partners/#{slug(partner)}?#{current_grade and 'grade_id=%s&amp;' % current_grade.id}#{current_country and 'country_id=%s' % current_country.id}"
+					        	   t-field="partner.image_512"
+					        	   class="mr-3 text-center o_width_128 azeer-partner-image"
+					        	   t-options='{"widget": "image", "qweb_img_responsive": False, "class": "partner-list-image"}'
+					        	></a>
+					        </div>
+				        </div>
+			        </div>
+			    </t>
+
+			    <!-- partner page number -->
+			  
+				    <div class='azeer-partner-navbar container'>
+				        <t t-call="website.pager">
+				           <t t-set="classname" t-valuef="float-left"/>
+
+				        </t>
+				    </div>
+		    	<!-- <div class="oe_structure" id="oe_structure_website_crm_partner_assign_layout_2"/>
+			</div> -->
+		    </t>
+
+	    
+	</template>
+
+
+	<template id="website_crm_partner_assign.partner" name="Azeer Partner Detail">
+	   <t t-call="website.layout">
+	   	<div class="container azeer-partner-details">
+	   		<div class="azeer-partner-name-description">
+	   			<h5 class="partner-name" id="partner_name" t-field="partner.display_name"/>
+	   			
+   				<t groups="website.group_website_publisher">
+   					<p class="css_non_editable_mode_hidden o_not_editable"><u>Partner short Description</u></p>
+   				</t>
+   			    <!-- website short description --> 
+   				<div class="azeer-partner-short-description" t-field="partner.website_short_description"/>
+	   			    
+	   			<t groups="website.group_website_publisher">
+	   				<p class="css_non_editable_mode_hidden o_not_editable"><u>Partner Full Description</u></p>
+	   			</t>
+	   			<!-- website full description -->         
+	   			<div class="azeer-partner-full-description" t-field="partner.website_description"/>
+
+
+	   		</div>
+
+	   		<div class="azeer-about-our-center">
+	   			<div class="container">
+	   				<div class="row">
+	   					<div class="col-lg-6 ">
+	   						<div class="partner-about-left">
+		   						<t groups="website.group_website_publisher">
+		   							<p class="css_non_editable_mode_hidden o_not_editable"><u>About Our Center</u></p>
+		   						</t>
+		   						<div class="about-azeer-partner-title1" t-field="partner.about_azeer_partner_title1"/>
+		   						<t groups="website.group_website_publisher">
+		   							<p class="css_non_editable_mode_hidden o_not_editable"><u>Title</u></p>
+		   						</t>
+		   						<div class="about-azeer-partner-title2" t-field="partner.about_azeer_partner_title2"/>
+		   						<t groups="website.group_website_publisher">
+		   							<p class="css_non_editable_mode_hidden o_not_editable"><u>Descriptions</u></p>
+		   						</t>
+		   						<div class="azeer-partner-description" t-field="partner.azeer_partner_description"/>
+	   						</div>
+	   					</div>
+	   					<div class="col-lg-6">
+	   						<div class="azeer-partner-detail-image" t-field="partner.detail_image_512" t-options='{"widget": "image", "preview_image": "detail_image_512", "class": "d-block mx-auto mb16"}'/>
+	   					</div>
+	   				</div>
+	   			</div>
+	   		</div>
+
+	   		<div class="azeer-choose-us">
+	   			<t groups="website.group_website_publisher">
+	   				<p class="css_non_editable_mode_hidden o_not_editable"><u>Choose us</u></p>
+	   			</t>
+	   			<div class="azeern-partner-choose-us" t-field="partner.azeer_partner_choose_us"/>
+	   			
+	   			<t groups="website.group_website_publisher">
+	   				<p class="css_non_editable_mode_hidden o_not_editable"><u>Descriptions</u></p>
+	   			</t>
+	   			<div class="azeern-partner-choose-us-description" t-field="partner.azeer_partner_choose_us_description"/>
+	   			
+
+	   		</div>
+
+	   	</div>
+	   </t>
+	</template>
+</odoo>
