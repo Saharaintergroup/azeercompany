@@ -27,7 +27,7 @@
                        <a t-attf-href="{{signup_image_button_link}}" class="btn btn-secondary-outline get-started">
                           <t t-esc="signup_image_button_lable"/>
                         </a>
-                        <p class="copyright">Copyright © 2021 by saharaintergroup</p>
+                        <p class="copyright">EL-AZEER © 2022 BY SAHARAINTERGROUP</p>
                       </div>
                     </div>
                   </div>
