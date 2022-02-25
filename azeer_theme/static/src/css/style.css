@@ -956,7 +956,7 @@ section.s_references.bg-gray-lighter {
     padding-top: 30px;
 }
 
-.section-medical-analytics .medical-left .btn-see-more, .medical-left .btn.btn-primary {
+.section-medical-analytics .medical-left .btn-see-more, .medical-left .btn.btn-primary, .medical-left .btn-outline-primary, .medical-left .btn-outline-primary:hover {
     background-color: #fff;
     color: var(--site_blue);
     font-size: 14px;
@@ -965,6 +965,7 @@ section.s_references.bg-gray-lighter {
     padding: 12px 20px;
     border-radius: 10px;
     margin-top: 30px;
+    border-color: var(--site_blue);
 }
 
 
@@ -1907,7 +1908,9 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] .main-title:be
     height: 100%;
     text-align: center;
 }
-
+#products_grid .o_wsale_product_grid_wrapper .oe_product_cart .oe_product_image span[data-oe-type="image"] {
+    min-height: 265px;
+}
 #product_detail.oe_website_sale h1[itemprop="name"] {
     font-size: 26px !important;
     font-weight: 600;
@@ -2231,7 +2234,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] .main-title:be
     content: '';
     width: 113px;
     min-height: 200px;
-    right: -230px;
+    right: -236px;
     background-image: url(../images/left_top_flow.png);
     top: 0;
     background-size: 100%;
@@ -2388,7 +2391,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] .main-title:be
 }
 
 .oe_website_sale table#cart_products td.td-qty {
-    min-width: 80px;
+    min-width: 160px;
 }
 
 .oe_website_sale table#cart_products td.td-product_name .text-muted.small {
@@ -2518,6 +2521,9 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] .main-title:be
 
 /*------ My account pages ----------*/
 
+.o_connected_user #wrapwrap main {
+    background-color: #fff;
+}
 .o_connected_user .o_portal_wrap .o_portal_navbar .breadcrumb {
     padding-left: 10px;
     padding-right: 10px;
@@ -3042,21 +3048,33 @@ section.s_blog_posts[data-name="LatestActivities"] .dynamic_snippet_template .ro
     font-size: 16px !important;
     margin-bottom: 10px !important;
 }
+#o_wblog_post_main section.s_text_image h2 {
+    font-size: 26px;
+    max-width: 350px;
+    display: block;
+    text-align: left;
+    line-height: normal;
+    font-weight: 600;
+}
+#o_wblog_post_main section.s_text_image .btn.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    font-size: 14px;
+    text-transform: uppercase;
+    min-width: 160px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+}
 @media (min-width: 768px) {
-    .container,
-    #owl-demo .owl-dots,
-    .s_carousel .carousel-indicators,
-    .container.s_timeline_line.flow_section,
-    section.s_features.values-block .grid-view.container, #o_wblog_post_main .o_container_small {
+    .container, #owl-demo .owl-dots, .s_carousel .carousel-indicators, .container.s_timeline_line.flow_section, section.s_features.values-block .grid-view.container, #o_wblog_post_main .o_container_small {
         max-width: 720px !important;
     }
 }
 
 @media (min-width: 992px) {
-    .container,
-    #owl-demo .owl-dots,
-    .s_carousel .carousel-indicators,
-    section.s_features.values-block .grid-view.container, #o_wblog_post_main .o_container_small {
+    .container, #owl-demo .owl-dots, .s_carousel .carousel-indicators, section.s_features.values-block .grid-view.container, #o_wblog_post_main .o_container_small {
         max-width: 960px !important;
     }
     header .navbar .dropdown-menu {
@@ -3074,14 +3092,11 @@ section.s_blog_posts[data-name="LatestActivities"] .dynamic_snippet_template .ro
 }
 
 @media (min-width: 1200px) {
-    .container,
-    .container.s_timeline_line.flow_section,
-    section.s_features.values-block .grid-view.container, #o_wblog_post_main .o_container_small {
+    .container, .container.s_timeline_line.flow_section, section.s_features.values-block .grid-view.container, #o_wblog_post_main .o_container_small {
         max-width: 1170px !important;
     }
-    #owl-demo .owl-dots,
-    .s_carousel .carousel-indicators {
-        max-width: 1170px;
+    #owl-demo .owl-dots, .s_carousel .carousel-indicators {
+        max-width: 1170px !important;
         margin: 0 auto;
         left: 0;
         right: 0;
@@ -3213,6 +3228,9 @@ section.s_blog_posts[data-name="LatestActivities"] .dynamic_snippet_template .ro
     .s_masonry_block .o_masonry_grid_container .h-100:after {
         bottom: -150px;
     }
+    #products_grid .o_wsale_product_grid_wrapper .oe_product_cart .oe_product_image span[data-oe-type="image"] {
+        min-height: 215px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -3305,10 +3323,8 @@ section.s_blog_posts[data-name="LatestActivities"] .dynamic_snippet_template .ro
     .navbar #top_menu {
         padding-left: 0;
     }
-    .container,
-    #owl-demo .owl-dots,
-    .s_carousel .carousel-indicators {
-        margin: 0;
+    .container, #owl-demo .owl-dots, .s_carousel .carousel-indicators {
+        margin: 0 auto;
     }
     header .navbar-collapse {
         overflow-y: auto;
@@ -3443,6 +3459,14 @@ section.s_blog_posts[data-name="LatestActivities"] .dynamic_snippet_template .ro
     .website_blog #o_wblog_posts_loop .row a.text-reset .o_wblog_normalize_font, .website_blog #o_wblog_posts_loop .row a.text-reset.d-block {
         padding-left: 20px !important;
         padding-right: 20px !important;
+    }
+    #products_grid .o_wsale_products_grid_table_wrapper > .table {
+        display: block;
+    }
+    #products_grid .o_wsale_products_grid_table_wrapper>.table .oe_product {
+        width: 49%;
+        display: inline-block;
+        margin: 0 !important;
     }
 }
 
@@ -3601,11 +3625,6 @@ section.s_blog_posts[data-name="LatestActivities"] .dynamic_snippet_template .ro
     #wrapwrap #products_grid .o_wsale_products_grid_table_wrapper>.table .o_wsale_product_grid_wrapper>.oe_product_cart {
         position: relative;
         left: 0;
-    }
-    #products_grid .o_wsale_products_grid_table_wrapper>.table .oe_product {
-        width: 49%;
-        display: inline-block;
-        margin: 0 !important;
     }
     #products_grid .o_wsale_products_item_title {
         display: block;

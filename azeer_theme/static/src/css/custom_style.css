@@ -122,8 +122,9 @@
 .mission-block .l-text, .visions-block .l-text {
     color: var(--site_grey);
     font-size: 18px;
-    max-width: 70%;
+    max-width: 60%;
     margin: 40px auto;
+    padding: 0 15px;
 }
 .statistics-block .l-text {
     color: var(--site_grey);
@@ -174,7 +175,7 @@ section.s_timeline[data-snippet="azeer_aboutus_experience_block"] .main-title {
     top: 50px !important;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
-    height: calc(100% - 140px);
+    height: calc(100% - 162px);
 }
 .s_timeline .text-center .main-title {
     padding: 0 15px 100px;

@@ -50,7 +50,7 @@
 
                         </t>
 
-                      <form class="login-form" role="form" method="post" t-if="not message">
+                      <form class="login-form oe_reset_password_form" role="form" method="post" t-if="not message">
                         <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
 
                         <t t-if="token and not invalid_token">
