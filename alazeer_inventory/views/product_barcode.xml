@@ -16,7 +16,7 @@
                             <i class="fa fa-fw fa-lg fa-clock-o mr-3" title="Expiration Date"
                                attrs="{'invisible': ['|', '|', ('tracking', '=', 'none'), ('picking_type_use_create_lots', '=', False), ('picking_type_use_existing_lots', '=', True)]}"/>
                             <field name="expiration_date" placeholder="Expiration Date"
-                                   attrs="{'invisible': ['|', '|', ('tracking', '=', 'none'), ('picking_type_use_create_lots', '=', False), ('picking_type_use_existing_lots', '=', True)]}"
+                                   attrs="{'invisible': ['|', '|', ('tracking', '=', 'none'), ('picking_type_use_create_lots', '=', False), ('picking_type_use_existing_lots', '=', True)],'readonly': [('picking_type_use_existing_lots', '=', True)]}"
                             />
                         </div>
                     </div>
