@@ -2,7 +2,7 @@
 
 {
     'name': "Barcode",
-    'summary': "Use barcode scanners to process logistics operations",
+    'summary': "Use barcode scanners to process logistics operations ",
     'description': """
 This module enables the barcode scanning feature for the warehouse management system.
     """,

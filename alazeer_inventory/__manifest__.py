@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Alazeer Inventory",
+    'name': "Alazeer Inventory ",
 
     'depends': ['base','stock','product_expiry'],
 
