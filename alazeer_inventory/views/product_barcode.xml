@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!-- Inherit Form View to Modify it -->
+        <record id="product_barcode_form" model="ir.ui.view">
+            <field name="name">product_barcode_form</field>
+            <field name="model">stock.move.line</field>
+            <field name="inherit_id" ref="stock_barcode.stock_move_line_product_selector"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//div[6]" position="after">
+
+                    <div class="row" groups="stock.group_production_lot">
+                        <div class="col-12 col-md-6 my-2 d-flex align-items-baseline" >
+                            <i class="fa fa-fw fa-lg fa-clock-o mr-3" title="Expiration Date"
+                               attrs="{'invisible': ['|', '|', ('tracking', '=', 'none'), ('picking_type_use_create_lots', '=', False), ('picking_type_use_existing_lots', '=', True)]}"/>
+                            <field name="expiration_date" placeholder="Expiration Date"
+                                   attrs="{'invisible': ['|', '|', ('tracking', '=', 'none'), ('picking_type_use_create_lots', '=', False), ('picking_type_use_existing_lots', '=', True)],'readonly': [('picking_type_use_existing_lots', '=', True)]}"
+                            />
+<!--                            <i class="fa fa-fw fa-lg fa-clock-o mr-3" title="Expiration Date"-->
+<!--                               attrs="{'invisible': ['|', '|', ('tracking', '=', 'none'), ('picking_type_use_create_lots', '=', False), ('picking_type_use_existing_lots', '=', True)]}"/>-->
+<!--                            <field name="ex_date" placeholder="Ex Date"-->
+<!--                                   attrs="{'invisible': ['|', '|', ('tracking', '=', 'none'), ('picking_type_use_create_lots', '=', False), ('picking_type_use_existing_lots', '=', True)],'readonly': [('picking_type_use_existing_lots', '=', True)]}"-->
+<!--                            />-->
+                        </div>
+                    </div>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>
