@@ -17,9 +17,11 @@
             <xpath expr="//td[@name='account_invoice_line_name']" position="before">
                  <td name="td_item_code"><span t-field="line.product_id.default_code"/></td>
             </xpath>
+        
             <xpath expr="//tbody[@class='invoice_tbody']/t/tr/t/td[3]" position="replace">
                  <td class="text-right">
-                    <span t-field="line.quantity"/>
+                     <span t-esc="'%.0f'%(line.quantity)"/>
+<!--                    <span t-field="line.quantity" widget="integer"/>-->
                 </td>
             </xpath>
             <xpath expr="//td[@name='account_invoice_line_name']" position="after">
@@ -30,5 +32,11 @@
             <xpath expr="//tbody[@class='invoice_tbody']/t/tr/t/td[7]" position="replace">
             </xpath>
 
+
+
+
         </template>
+
+
+
 </odoo>
