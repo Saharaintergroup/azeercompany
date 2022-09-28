@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
 
+   <data>
         <template id="sale_report_invoice_customized" inherit_id="account.report_invoice_document">
 
             <xpath expr="//th[@name='th_quantity']" position="before">
@@ -24,6 +24,12 @@
             <xpath expr="//p[@name='payment_communication']" position="replace">
 
         </xpath>
+
+            <xpath expr="//th[@name='th_item_unit']" position="replace">
+            </xpath>
+
+        <xpath expr="//td[@name='td_item_unit']" position="replace">
+            </xpath>
 
 
 
@@ -56,6 +62,89 @@
             </div>
         </div>
             </xpath>
+        </template>
+
+    <template id="report_purchasequotation_document_customized" inherit_id="purchase.report_purchasequotation_document">
+             <xpath expr="//th[@name='th_description']" position="replace">
+                 <th name="th_description" class="text-left"><span>Item Description</span></th>
+            </xpath>
+                    <xpath expr="//th[@name='th_description']" position="before">
+                 <th name="th_item_code" class="text-left"><span>Item Code</span></th>
+            </xpath>
+                    <xpath expr="//td[@id='product']" position="before">
+                 <td name="td_item_code"><span t-field="order_line.product_id.default_code"/></td>
+            </xpath>
+
+                     <xpath expr="//tbody/t/tr/t/td[4]" position="replace">
+                 <td class="text-right">
+
+                   <span t-esc="'%.0f'%(order_line.product_qty)"/>
+                   <span t-field="order_line.product_uom" groups="uom.group_uom"/>
+                </td>
+            </xpath>
+            <xpath expr="//th[@name='th_quantity']" position="before">
+                <th name="th_remark" class="text-right"><span>Remark</span></th>
+
+            </xpath>
+            <xpath expr="//tbody/t/tr/t/td[4]" position="before">
+                 <td class="text-right">
+                    <span t-field="order_line.product_id.description"/>
+                </td>
+            </xpath>
+
+
+
+
+
+        </template>
+
+        <template id="report_saleorder_document_customized" inherit_id="sale.report_saleorder_document">
+             <xpath expr="//th[@name='th_description']" position="replace">
+                 <th name="th_description" class="text-left"><span>Item Description</span></th>
+            </xpath>
+                    <xpath expr="//th[@name='th_description']" position="before">
+                 <th name="th_item_code" class="text-left"><span>Item Code</span></th>
+            </xpath>
+                    <xpath expr="//td[@name='td_name']" position="before">
+                 <td name="td_item_code"><span t-field="line.product_id.default_code"/></td>
+            </xpath>
+
+                     <xpath expr="//tbody/t/tr/t/td[3]" position="replace">
+                 <td class="text-right">
+
+                   <span t-esc="'%.0f'%(line.product_uom_qty)"/>
+                   <span t-field="line.product_uom" groups="uom.group_uom"/>
+                </td>
+            </xpath>
+            <xpath expr="//th[@name='th_quantity']" position="before">
+                <th name="th_remark" class="text-right"><span>Remark</span></th>
+
+            </xpath>
+            <xpath expr="//tbody/t/tr/t/td[3]" position="before">
+                 <td class="text-right">
+                    <span t-field="line.product_id.description"/>
+                </td>
+            </xpath>
+
+            <xpath expr="//th[@name='th_taxes']" position="replace">
+            </xpath>
+
+            <xpath expr="//td[@name='td_taxes']" position="replace">
+            </xpath>
+            <xpath expr="//p[@t-field='doc.note']" position="replace">
+        </xpath>
+
+            <xpath expr="//span[@t-field='doc.payment_term_id.note']" position="replace">
+        </xpath>
+
+              <xpath expr="//p[@id='fiscal_position_remark']" position="replace">
+        </xpath>
+
+
+
+
+
+
         </template>
 
 <record id="paperformat_azeer" model="report.paperformat">
