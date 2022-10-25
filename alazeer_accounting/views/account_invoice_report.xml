@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
 
+
+
     <template id="report_invoice_customized" inherit_id="account.report_invoice_document">
             <xpath expr="//th[@name='th_description']" position="replace">
                  <th name="th_description" class="text-left"><span>Item Description</span></th>
@@ -17,9 +19,11 @@
             <xpath expr="//td[@name='account_invoice_line_name']" position="before">
                  <td name="td_item_code"><span t-field="line.product_id.default_code"/></td>
             </xpath>
+        
             <xpath expr="//tbody[@class='invoice_tbody']/t/tr/t/td[3]" position="replace">
                  <td class="text-right">
-                    <span t-field="line.quantity"/>
+                     <span t-esc="'%.0f'%(line.quantity)"/>
+<!--                    <span t-field="line.quantity" widget="integer"/>-->
                 </td>
             </xpath>
             <xpath expr="//td[@name='account_invoice_line_name']" position="after">
@@ -30,5 +34,35 @@
             <xpath expr="//tbody[@class='invoice_tbody']/t/tr/t/td[7]" position="replace">
             </xpath>
 
+
+
+
+
+
+
+
         </template>
+
+    <!-- Inherit Form View to Modify it -->
+    <record id="view_move_form" model="ir.ui.view">
+        <field name="name">view_move_form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='narration']" position="attributes">
+                <attribute name="invisible">1</attribute>
+
+            </xpath>
+
+            <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='tax_ids']" position="attributes">
+                <attribute name="invisible">1</attribute>
+
+            </xpath>
+
+        </field>
+    </record>
+
+
+
 </odoo>

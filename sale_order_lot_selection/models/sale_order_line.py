@@ -9,10 +9,30 @@ class SaleOrderLine(models.Model):
 
     lot_id = fields.Many2one("stock.production.lot", "Lot", copy=False)
     lot_expiration_date = fields.Datetime(related='lot_id.expiration_date', string="Expiration Date")
+    product_uom = fields.Many2one('uom.uom', string='Unit of Measure',)
+
+    def get_uom(self):
+        for rec in self:
+            return rec.product_id.uom_po_id.id
+
+    @api.onchange('product_id')
+    def get_uom_domain(self):
+        ids = []
+        if self.product_id:
+            ids.append(self.product_id.uom_id.id)
+            ids.append(self.product_id.uom_po_id.id)
+
+        return {
+            'domain':
+                {
+                    'product_uom': [('id', 'in', ids)]
+                },
+        }
 
     @api.onchange("product_id")
     def product_id_change(self):
         super().product_id_change()
+        self.product_uom = self.product_id.uom_po_id.id
         self.lot_id = False
 
     @api.onchange("product_id")
