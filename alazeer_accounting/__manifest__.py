@@ -2,7 +2,7 @@
 {
     'name': "Alazeer Accounting",
 
-    'depends': ['base','account'],
+    'depends': ['base','account','sale', 'purchase'],
 
     # always loaded
     'data': [
