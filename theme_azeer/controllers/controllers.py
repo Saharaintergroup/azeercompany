@@ -18,3 +18,7 @@ class Website(Website):
     @http.route(['/web/contactus'], auth='public', type="http", website=True)
     def contactus(self, **kw):
         return http.request.render('theme_azeer.azeer_contactus_page', {})
+
+    @http.route(['/web/signup'], auth='public', type="http", website=True)
+    def signup(self, **kw):
+        return http.request.render('theme_azeer.signup_page', {})

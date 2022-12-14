@@ -137,28 +137,28 @@
 
 
                                         </div>
-                                        <div class="">
+                                        <div class="row">
                                             <hr style="width: 100%;border-top: 2px solid #f4f3f3;margin-top: 0px;margin-bottom: 0px;"/>
-                                                                                            <div style="text-align: center;">
+                                            <div style="text-align: center;">
 
-                                            <div class="footer_social">
-                                                <a href="">
-                                                    <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
-                                                       class="fa fa-facebook"></i>
-                                                </a>
-                                                <a href="">
-                                                    <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
-                                                       class="fa fa-twitter"></i>
-                                                </a>
-                                                <a href="">
-                                                    <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
-                                                       class="fa fa-linkedin"></i>
-                                                </a>
-                                                <a href="">
-                                                    <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
-                                                       class="fa fa-instagram"></i>
-                                                </a>
-                                                 </div>
+                                                <div class="footer_social">
+                                                    <a href="">
+                                                        <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
+                                                           class="fa fa-facebook"></i>
+                                                    </a>
+                                                    <a href="">
+                                                        <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
+                                                           class="fa fa-twitter"></i>
+                                                    </a>
+                                                    <a href="">
+                                                        <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
+                                                           class="fa fa-linkedin"></i>
+                                                    </a>
+                                                    <a href="">
+                                                        <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
+                                                           class="fa fa-instagram"></i>
+                                                    </a>
+                                                </div>
                                             </div>
                                             <hr style="width: 100%;border-top: 2px solid #f4f3f3;margin-top: 0px;margin-bottom: 0px;"/>
 

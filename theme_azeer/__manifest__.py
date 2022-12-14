@@ -30,19 +30,20 @@
         'views/aboutus.xml',
         'views/contactus.xml',
         'views/footer.xml',
-        # 'views/auth/login/.xml',
+        'views/auth/login.xml',
+        'views/auth/signup.xml',
+        'views/auth/reset_password.xml',
 
     ],
     'assets': {
         'web.assets_frontend': [
             '/theme_azeer/static/src/css/bootstrap.css',
             "https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap",
-            # "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
             '/theme_azeer/static/src/css/font-awesome.min.css',
             '/theme_azeer/static/src/css/style.css',
             '/theme_azeer/static/src/css/responsive.css',
             '/theme_azeer/static/src/css/custom.css',
-
+            "https://fonts.cdnfonts.com/css/nexa-bold",
 
         ],
 
