@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="auth_signup.reset_password" name="Reset password">
+        <t t-call="azeer_theme.extended_web_layout">
+        	<!-- Changes -->
+            <div class="page-wrapper auth reset-password">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 left">
+                    <div class="left-content" t-attf-style="background: url('#{pw_reset_image}') no-repeat center;background-size:100% 100%;">
+                      <div class="text-content">
+                        <div class="login-logo">
+                          <a href="/"
+                            >
+                            <img t-att-src="company_id"/></a>
+                        </div>
+                        <h2 class="login-msg"><t t-esc="pw_reset_image_title"/></h2>
+                        <div class="login-content">
+                           <p class="text-break">
+                            <t t-esc="pw_reset_image_description"/>
+                          </p>
+                        </div>
+
+                        <!-- <button class="btn btn-secondary-outline get-started">
+                          <t t-esc="pw_reset_image_button_lable"/>
+                        </button> -->
+
+                        <a t-attf-href="{{pw_reset_image_button_link}}" class="btn btn-secondary-outline get-started">
+                            <t t-esc="pw_reset_image_button_lable"/>
+                        </a>
+                        <p class="copyright">Copyright © 2021 by saharaintergroup</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  
+                  <div class="col-md-6 right">
+                    <div class="right-content">
+                        <h3 class="text-center title">Reset Password</h3>
+                        <p class="text-center login-msg">Please Login To Continue!</p>
+
+                        <t  t-if="message" >
+                            <p class="reset-mail-success">
+                            We Have Sent A Message To You Email To Reset Password !
+                            </p>
+                            <!-- <button type="submit" class="login-submit btn btn-primary">
+                            Back To Login
+                            </button> -->
+                            <a class="login-submit btn btn-primary" t-attf-href="/web/login?{{ keep_query() }}">Back To Login</a>
+
+                        </t>
+
+                      <form class="login-form" role="form" method="post" t-if="not message">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+                        <t t-if="token and not invalid_token">
+                            <t t-call="auth_signup.fields">
+                                <t t-set="only_passwords" t-value="1"/>
+                            </t>
+                        </t>
+                        
+
+                        <t t-if="not token">
+                            <fieldset class="fieldset">
+                              <input
+                                type="text"
+                                class="input" id="login" aria-describedby="emailHelp"
+                                placeholder="Email Address" required="required" t-att-value="login" name="login" autofocus="autofocus" autocapitalize="off"
+                              />
+                            </fieldset>
+                        </t>
+                        <p class="alert alert-danger" t-if="error" role="alert">
+                            <t t-esc="error"/>
+                        </p>
+                        <input type="hidden" name="redirect" t-att-value="redirect"/>
+                        <input type="hidden" name="token" t-att-value="token"/>
+                        <button type="submit" class="login-submit btn btn-primary">
+                              Continue
+                          </button>
+                      </form>
+                    <t t-if="not message">
+                        <p class="signup-link text-center">
+                        Go back to <a t-attf-href="/web/signup?{{ keep_query() }}">Sign Up</a>
+                        </p>
+                    </t>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>           
+        </t>
+    </template>
+</odoo>
+
