@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <template id="radiology_page" name="Radiology">
+
+            <t t-call="website.layout">
+                <body>
+                    <div class="hero_area">
+
+                        <div class="hero_bg_box cc" id="img" style="border: none;">
+                            <img id="imghero" src="../theme_azeer/static/src/images/RADIOLOGY.png" alt="RADIOLOGY"/>
+                            <div class="centered">
+                                <h1 style="color: white;font-weight: bold;">Radiology</h1>
+                            </div>
+
+                        </div>
+
+                        <!-- header section strats -->
+                        <header class="header_section" id="header_section">
+                            <div class="container">
+                                <nav class="navbar navbar-expand-lg custom_nav-container " id="#p-22">
+                                    <a class="navbar-brand" href="/" style="width:200px">
+                                        <img id="navbar-brand" src="../theme_azeer/static/src/images/logoazeer.png"
+                                             alt="logo azeer" style="margin-left: 100px; margin-right: 100px;"
+                                        />
+                                    </a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class=""></span>
+                                    </button>
+                                    <t t-call="theme_azeer.navazeer">
+
+                                    </t>
+                                </nav>
+
+                            </div>
+                        </header>
+
+                    </div>
+                    <section class=" layout_padding" style="background-color: white;">
+                        <div class="department_container">
+                            <div class="container ">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="heading_container ">
+                                            <h2 style="font-weight: bold;color: #4a4848;line-height: 1.6">What Is
+                                                Radiology ?
+                                            </h2>
+
+                                            <h3 style="line-height: 1.5;color: #646060;">
+                                                Radiology is the branch of medicine that uses non-invasive technology to
+                                                create
+                                                images of the bones, tissues and organs within the human body. these
+                                                images are
+                                                interpreted by a radiologist to identify or monitor diseases or
+                                                injuries. the results are
+                                                then included in a written report to the referring doctor
+                                            </h3>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class=" layout_padding" style="background-color: white;">
+                        <div class="department_container">
+                            <div class="container ">
+
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="heading_container ">
+                                            <h2 style="font-weight: bold;color: #4a4848;line-height: 1.6">What Is
+                                                Types Of Diagnostics We Provide
+                                            </h2>
+
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <section class="client_section " style="width: 100%;">
+                                                <div class="container-fluid" style="padding: 5%;">
+                                                    <div id="carouselExample2Controls" class="carousel slide"
+                                                         data-ride="carousel">
+                                                        <div class="carousel-inner">
+                                                            <div class="carousel-item active">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <div class="box "
+                                                                             style=" height: 400px;box-shadow: -1px -1px 4px 4px #e3dddd;margin-left: 10px;margin-right: 10px;">
+                                                                            <div class="img-box">
+                                                                                <img src="/theme_azeer/static/src/icon/mri.png"
+                                                                                     alt="MRI" style=""/>
+                                                                            </div>
+                                                                            <div class="detail-box">
+                                                                                <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                                                    Magnetic Resonance Imaging (MRI)
+                                                                                </h6>
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                    Uses a strong magnetic field and
+                                                                                    radio
+                                                                                    waves to capture detailed images of
+                                                                                    the
+                                                                                    brain, spinal cord, nerves, muscles,
+                                                                                    ligaments and tendons, and many
+                                                                                    internal organs of the body
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="box "
+                                                                             style=" height: 400px;box-shadow: -1px -1px 4px 4px #e3dddd;margin-left: 10px;margin-right: 10px;">
+
+                                                                            <div class="img-box">
+                                                                                <img src="/theme_azeer/static/src/icon/xray.png"
+                                                                                     alt="xray" style=""/>
+                                                                            </div>
+                                                                            <div class="detail-box">
+                                                                                <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                                                    We Go For The Whole
+                                                                                    Package
+                                                                                </h6>
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                    You are able to select any of
+                                                                                    the medical supplies from a
+                                                                                    wide range of stocks for your
+                                                                                    clinical needs
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="box "
+                                                                             style=" height: 400px;box-shadow: -1px -1px 4px 4px #e3dddd;margin-left: 10px;margin-right: 10px;">
+                                                                            <div class="img-box">
+                                                                                <img src="/theme_azeer/static/src/icon/mammography.png"
+                                                                                     alt="mammography" style=""/>
+                                                                            </div>
+                                                                            <div class="detail-box">
+                                                                                <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                                                    We Hardly Run Low
+                                                                                </h6>
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                    With immediate access, you
+                                                                                    can check hundreds of items
+                                                                                    with an enduring shelf-life
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="carousel-item ">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <div class="box "
+                                                                             style=" height: 400px;box-shadow: -1px -1px 4px 4px #e3dddd;margin-left: 10px;margin-right: 10px;">
+                                                                            <div class="img-box">
+                                                                                <img src="/theme_azeer/static/src/icon/mri.png"
+                                                                                     alt="MRI" style=""/>
+                                                                            </div>
+                                                                            <div class="detail-box">
+                                                                                <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                                                    Magnetic Resonance Imaging (MRI)
+                                                                                </h6>
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                    Uses a strong magnetic field and
+                                                                                    radio
+                                                                                    waves to capture detailed images of
+                                                                                    the
+                                                                                    brain, spinal cord, nerves, muscles,
+                                                                                    ligaments and tendons, and many
+                                                                                    internal organs of the body
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="box "
+                                                                             style=" height: 400px;box-shadow: -1px -1px 4px 4px #e3dddd;margin-left: 10px;margin-right: 10px;">
+
+                                                                            <div class="img-box">
+                                                                                <img src="/theme_azeer/static/src/icon/xray.png"
+                                                                                     alt="xray" style=""/>
+                                                                            </div>
+                                                                            <div class="detail-box">
+                                                                                <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                                                    We Go For The Whole
+                                                                                    Package
+                                                                                </h6>
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                    You are able to select any of
+                                                                                    the medical supplies from a
+                                                                                    wide range of stocks for your
+                                                                                    clinical needs
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <div class="box "
+                                                                             style=" height: 400px;box-shadow: -1px -1px 4px 4px #e3dddd;margin-left: 10px;margin-right: 10px;">
+                                                                            <div class="img-box">
+                                                                                <img src="/theme_azeer/static/src/icon/mammography.png"
+                                                                                     alt="mammography" style=""/>
+                                                                            </div>
+                                                                            <div class="detail-box">
+                                                                                <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                                                    We Hardly Run Low
+                                                                                </h6>
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                    With immediate access, you
+                                                                                    can check hundreds of items
+                                                                                    with an enduring shelf-life
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="carousel_btn-container">
+                                                            <a class="carousel-control-prev"
+                                                               href="#carouselExample2Controls" role="button"
+                                                               data-slide="prev">
+                                                                <i class="fa fa-long-arrow-left" aria-hidden="true"/>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+
+                                                            <a class="carousel-control-next"
+                                                               href="#carouselExample2Controls" role="button"
+                                                               data-slide="next">
+                                                                <i class="fa fa-long-arrow-right" aria-hidden="true"/>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <t t-call="theme_azeer.footerazeer">
+                    </t>
+                </body>
+            </t>
+        </template>
+
+
+    </data>
+</odoo>

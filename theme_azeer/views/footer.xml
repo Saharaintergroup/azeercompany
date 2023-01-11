@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <template id="footerazeer">
+            <!-- footer section -->
+
+            <section class=""
+style=" margin-top: 37px;background-image: url('../theme_azeer/static/src/images/footer.png'); background-repeat: no-repeat;background-size: cover;width: 100%;position: absolute;" >                <div class="container">
+                    <div class="row"
+                    >
+                        <div class="col-md-12 ">
+                            <div class="row">
+                                <div class="col-md-8">
+
+                                </div>
+                                <div class="col-md-2">
+                                    <a class="btn cusbutton" href="#header_section">
+                                        <i style="margin-top: 6px;" class="fa fa-chevron-up fac"></i>
+                                    </a>
+
+                                </div>
+                                <div class="col-md-2">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 " style="padding-top:15%;">
+                            <div class="row">
+                                <div class="col-md-4 footer_col" style="text-align: center;">
+                                    <div class="div">
+                                        <img style="width: 50%;"
+                                             src="../theme_azeer/static/src/images/logofooter.png"
+                                             alt=""/>
+                                    </div>
+                                    <p style="padding: 5%;font-size: 11px;color: white;margin-bottom: 0px;">
+                                        Azeer Group 2011 -
+                                        2023
+                                    </p>
+                                    <div class="footer_social">
+                                        <a href="/website/social/facebook" target="_blank">
+                                            <i style="color: white;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                               class="fa fa-facebook"></i>
+                                        </a>
+                                        <a href="/website/social/twitter" target="_blank">
+                                            <i style="color: white;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                               class="fa fa-twitter"></i>
+                                        </a>
+                                        <a href="/website/social/linkedin" target="_blank">
+                                            <i style="color: white;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                               class="fa fa-linkedin"></i>
+                                        </a>
+                                        <a href="/website/social/instagram" target="_blank">
+                                            <i style="color: white;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                               class="fa fa-instagram"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 footer_col" style="text-align: inherit;">
+                                    <h6 style="color: white;font-size: 1.3rem;font-weight: bold;">
+                                        Quick Links
+                                    </h6>
+                                    <div class="row">
+                                        <ul style="padding-left: 15px;padding-right: 15px;">
+                                            <li style="list-style: none;">
+                                                <a style="color: white;font-size: small;font-weight: bold;" href="/">
+                                                    Home
+                                                </a>
+                                            </li>
+                                            <li style="list-style: none;">
+                                                <a style="color: white;font-size: small;font-weight: bold;" href="">
+                                                    Our services
+                                                </a>
+                                            </li>
+                                            <li style="list-style: none;">
+                                                <a style="color: white;font-size: small;font-weight: bold;" href="/contactus">
+                                                                                                        Contact us
+
+                                                </a>
+                                            </li>
+                                            <li style="list-style: none;">
+                                                <a style="color: white;font-size: small;font-weight: bold;" href="/web/aboutus">
+
+                                                                                                    About us
+</a>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-md-5 footer_col" style="text-align: inherit;">
+                                    <h6 style="color: white;font-size: 1.3rem;font-weight: bold;">
+                                        Contact Info
+                                    </h6>
+                                    <div class="row">
+                                        <ul style="padding-left: 15px;padding-right: 15px;">
+                                            <li style="list-style: none;">
+                                                <i style="color: white;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                                   class="fa fa-phone d-inline-block"></i>
+                                                <p class="d-inline-block"
+                                                   style="color: white;font-size: small;font-weight: bold;">
+                                                    +218 91 218 7949 -
+                                                </p>
+
+                                                <p class="d-inline-block"
+                                                   style="color: white;font-size: small;font-weight: bold;">
+                                                    +218 21 477 0643
+
+                                                </p>
+                                                <br/>
+                                                <i style="color: white;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                                   class="fa fa-phone d-inline-block"></i>
+                                                <p class="d-inline-block"
+                                                   style="color: white;font-size: small;font-weight: bold;">
+                                                    +218 21 727 9750 -
+                                                </p>
+
+                                                <p class="d-inline-block"
+                                                   style="color: white;font-size: small;font-weight: bold;">
+                                                    +917 55 901 7326
+
+                                                </p>
+                                            </li>
+                                            <li style="list-style: none;">
+                                                <i style="color: white;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                                   class="fa fa-map-marker d-inline-block"></i>
+                                                <p class="d-inline-block"
+                                                   style="color: white;font-size: small;font-weight: bold;">
+                                                    Hay Alandalus , Tripoli , Libya
+                                                </p>
+                                            </li>
+
+                                            <li style="list-style: none;">
+                                                <i style="color: white;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                                   class="fa fa-envelope d-inline-block"></i>
+                                                <p class="d-inline-block"
+                                                   style="color: white;font-size: small;font-weight: bold;">
+                                                    info@azeergroup.com
+                                                </p>
+                                            </li>
+                                        </ul>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </template>
+    </data>
+</odoo>
