@@ -71,18 +71,19 @@ style=" margin-top: 37px;background-image: url('../theme_azeer/static/src/images
                                                     Our services
                                                 </a>
                                             </li>
+                                              <li style="list-style: none;">
+                                                <a style="color: white;font-size: small;font-weight: bold;" href="/web/aboutus">
+
+                                                    About us
+</a>
+                                            </li>
                                             <li style="list-style: none;">
                                                 <a style="color: white;font-size: small;font-weight: bold;" href="/contactus">
                                                                                                         Contact us
 
                                                 </a>
                                             </li>
-                                            <li style="list-style: none;">
-                                                <a style="color: white;font-size: small;font-weight: bold;" href="/web/aboutus">
 
-                                                                                                    About us
-</a>
-                                            </li>
                                         </ul>
 
 

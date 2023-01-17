@@ -7,8 +7,7 @@
                     <!--                         header section strats -->
                     <header class="header_section" id="header_section" style="padding-bottom: 0px;padding-top: 0px;">
                         <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
-                            <nav class="navbar navbar-expand-lg custom_nav-container " id="#p-22"
-                                 style="background-color: #005055;">
+                            <nav class="navbar navbar-expand-lg custom_nav-container " id="#p-22" style="background-color: #005055;">
                                 <a class="navbar-brand" href="/" style="width:200px">
                                     <img id="navbar-brand" src="../theme_azeer/static/src/images/logoazeer.png"
                                          alt="logo azeer" style="margin-left: 100px; margin-right: 100px;"
@@ -440,4 +439,7 @@
         <xpath expr="//div[@id='wrapwrap']/header" position="replace"/>
         <xpath expr="//div[@id='wrapwrap']/footer" position="replace"/>
     </template>
+    <!--    <template id="website.fullscreen_indication" >-->
+    <!-- <p></p>-->
+    <!--    </template>-->
 </odoo>

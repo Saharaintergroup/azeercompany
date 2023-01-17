@@ -32,8 +32,6 @@
         'views/cinicalservies.xml',
         'views/radiology.xml',
         'views/pathology.xml',
-        # 'views/full_screen.xml',
-
         'views/contact_us.xml',
         'views/footer.xml',
         'views/auth/login.xml',
@@ -51,7 +49,6 @@
             '/theme_azeer/static/src/css/recustom.css',
             "https://fonts.cdnfonts.com/css/nexa-bold",
         ],
-
 
     },
     'images': [
