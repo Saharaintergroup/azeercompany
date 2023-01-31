@@ -438,7 +438,7 @@
               customize_show="True">
         <xpath expr="//div[@id='wrapwrap']/header" position="replace"/>
         <xpath expr="//div[@id='wrapwrap']/footer" position="replace"/>
-                <!--  <xpath expr="//div[@class='o_fullscreen_indication']" position="replace"/>-->
+                 <!--    <xpath expr="//div[@class='o_fullscreen_indication']" position="replace"/> >-->
 
 
     </template>
@@ -446,3 +446,4 @@
     <!-- <p></p>-->
     <!--    </template>-->
 </odoo>
+
