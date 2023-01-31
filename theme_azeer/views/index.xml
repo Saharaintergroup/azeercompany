@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="azeer_home" inherit_id="website.homepage" name="Home" active="True">
+        <xpath expr="//div[@id='wrap']" position="replace">
+            <body>
+                <div class="hero_area">
+                    <!--                         header section strats -->
+                    <header class="header_section" id="header_section" style="padding-bottom: 0px;padding-top: 0px;">
+                        <div class="container-fluid" style="padding-left: 0px;padding-right: 0px;">
+                            <nav class="navbar navbar-expand-lg custom_nav-container " id="#p-22"
+                                 style="background-color: #005055;">
+                                <a class="navbar-brand" href="/" style="width:200px">
+                                    <img id="navbar-brand" src="../theme_azeer/static/src/images/logoazeer.png"
+                                         alt="logo azeer" style="margin-left: 100px; margin-right: 100px;"
+                                    />
+                                </a>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class=""></span>
+                                </button>
+                                <t t-call="theme_azeer.navazeer">
+
+                                </t>
+                            </nav>
+
+                        </div>
+                    </header>
+                    <!-- end header section -->
+                    <!-- slider section -->
+                    <section class="slider_section home" id="home" style="padding-top: 0px;">
+                        <div class="bd-example">
+                            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img id="imghero" style="border: none;"
+                                             src="../theme_azeer/static/src/images/home1.png" alt="home1"/>
+                                        <div class="carousel-caption  d-none d-md-block">
+                                            <h3 style="color: white;font-weight: bold;">
+                                                Efficiency In Motion
+                                            </h3>
+                                            <h5 style="color: white;">
+                                                Advancing solutions to transform
+                                                healthcare in Libya
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img id="imghero" style="border: none;"
+                                             src="../theme_azeer/static/src/images/home2.png" alt="home2"/>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3 style="color: white;font-weight: bold;">
+                                                Advanced Technology
+                                            </h3>
+                                            <h5 style="color: white;">
+
+                                                We help find opportunities for a more
+                                                enhanced performance
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img id="imghero" style="border: none;"
+                                             src="../theme_azeer/static/src/images/home3.png" alt="home3"/>
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3 style="color: white;font-weight: bold;">
+                                                Trusted Care
+                                            </h3>
+                                            <h5 style="color: white;">
+
+                                                Transforming patient outcomes by
+                                                further helping clinicians for patient
+                                                impact.
+                                            </h5>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
+                                   data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"/>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
+                                   data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"/>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                                <ol class="carousel-indicators"
+                                    style="padding-bottom: -15px;margin-bottom: 0px;position: absolute;bottom: 120px;">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"/>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"/>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"/>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- end slider section -->
+                </div>
+                <section class="department_section layout_padding">
+                    <div class="department_container">
+                        <div class="container " style="padding: 34px;">
+                            <div class="heading_container ">
+                                <h4 style="  color: #555151;font-weight: bold;" id="lineh">
+                                    Azeer Holding Group Works As A Parent Of Smaller Multinational Companies
+                                    Specialized In Diagnostic Solutions – Distributing A Wide Range Of Medical
+                                    Instruments, Reagents, Software And Services, Used By Laboratories Across
+                                    More Than 50 Facilities In Libya.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="department_section layout_padding">
+                    <div class="department_container">
+                        <div class="container ">
+                            <div class="heading_container ">
+                                <h3 style="font-weight: bold;color: #4a4848;padding-left: 20px;padding-right: 20px;">
+                                    How We Provide Stable Services
+                                </h3>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"/>
+                                <div class="col-md-10">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="box "
+                                                 style=" height: 400px; background-image: url('../theme_azeer/static/src/images/divb1.png'); background-repeat: no-repeat;background-size: cover;">
+                                                <div class="img-box">
+                                                    <img src="../theme_azeer/static/src/images/delivary.png"
+                                                         alt=""/>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+
+                                                        We Deliver Fastz
+                                                    </h6>
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;width: 193px;color: #4f4d4d;">
+                                                        We value time and use it
+                                                        effectively to manage our
+                                                        tasks.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="box " style="height: 400px;">
+                                                <div class="img-box">
+                                                    <img src="../theme_azeer/static/src/images/package.png" alt=""/>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+
+                                                        We Go For The Whole
+                                                        Package
+                                                    </h6>
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;width: 193px;color: #4f4d4d;">
+                                                        You are able to select any of
+                                                        the medical supplies from a
+                                                        wide range of stocks for your
+                                                        clinical needs
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="box "
+                                                 style=" height: 400px; background-image: url('../theme_azeer/static/src/images/divb2.png'); background-repeat: no-repeat;background-size: cover;">
+                                                <div class="img-box">
+                                                    <img src="../theme_azeer/static/src/images/3rdicon.png" alt=""/>
+                                                </div>
+                                                <div class="detail-box">
+                                                    <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                        We Hardly Run Low
+                                                    </h6>
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;width: 193px;color: #4f4d4d;">
+                                                        With immediate access, you
+                                                        can check hundreds of items
+                                                        with an enduring shelf-life
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"/>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end department section -->
+                <!-- about section -->
+                <section class="container-fluid">
+                    <div class="row"
+                         style="background-image: url('../theme_azeer/static/src/images/hpp.png'); background-repeat: no-repeat;background-size: 100% 100%;">
+                        <div class="col-md-2"/>
+                        <div class="col-md-4 pull-right ">
+                            <div class="heading_container " id="p30">
+                                <h3 style="font-weight: bold;color: #4a4848;">
+                                    Over 50 Functioning Local
+                                    Laboratories Have Been
+                                    Fully Equipped And
+                                    Utilized
+                                </h3>
+                            </div>
+                            <p>
+                                Azeer Group has partnered with multi
+                                medical Institutions from both public,
+                                and the private sector
+                            </p>
+                        </div>
+                        <div class="col-md-1"/>
+                        <div class="col-md-4 pull-left">
+                            <img id="imgov"
+                                 src="../theme_azeer/static/src/images/hppp.png" alt="Azeer_group"/>
+                        </div>
+                    </div>
+                </section>
+                <!-- end about section -->
+                <!--  section -->
+                <section class="department_section layout_padding">
+                    <div class="container-fluid">
+                        <div class="row"
+                             style="background-image: url('../theme_azeer/static/src/images/bk.png'); background-repeat: no-repeat;background-size: 100% 100%;">
+                            <div class="col-md-12">
+                                <div class="heading_container heading_center">
+                                    <h2 style="color: white;padding-top: 3%;">
+                                        Our Core Values
+                                    </h2>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-1"/>
+                                    <div class="col-md-10">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-lg-4 mx-auto">
+                                                <div class="box"
+                                                     style="height: 400px;align-items: center;margin-top: 20px;background-color: #ffffff;border-radius: 5px;text-align: center;">
+                                                    <div class="img-box" style="padding-top: 15%;">
+                                                        <img style="width: 100%;"
+                                                             src="../theme_azeer/static/src/images/icon1.png"
+                                                             alt=""/>
+                                                    </div>
+                                                    <div class="detail-box" style="padding: 20%;padding-top: 10%;">
+                                                        <h5>
+                                                            Commitment To
+                                                            Integrity
+                                                        </h5>
+                                                        <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;font-size: small;">
+                                                            We honor our commitments and the
+                                                            achievements of others. we have the
+                                                            capacity to acknowledge our limits and
+                                                            seek guidance. we aspire to serve the
+                                                            patient’s best interest.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 mx-auto">
+                                                <div class="box"
+                                                     style="height: 400px;align-items: center;margin-top: 20px;background-color: #ffffff;border-radius: 5px;text-align: center;">
+                                                    <div class="img-box" style="padding-top: 15%;">
+                                                        <img style="width: 100%;"
+                                                             src="../theme_azeer/static/src/images/icon2.png"
+                                                             alt=""/>
+                                                    </div>
+                                                    <div class="detail-box" style="padding: 20%;padding-top: 10%;">
+                                                        <h5>
+                                                            Commitment To
+                                                            Excellence
+                                                        </h5>
+                                                        <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;font-size: small;">
+                                                            We aim to provide the best, most
+                                                            effective care through reflective practice.
+                                                            we are committed to life-long learning,
+                                                            expertise and professional development.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4 mx-auto">
+                                                <div class="box"
+                                                     style="height: 400px;align-items: center;margin-top: 20px;background-color: #ffffff;border-radius: 5px;text-align: center;">
+                                                    <div class="img-box" style="padding-top: 15%;">
+                                                        <img style="width: 100%;"
+                                                             src="../theme_azeer/static/src/images/icon3.png"
+                                                             alt=""/>
+                                                    </div>
+                                                    <div class="detail-box" style="padding: 20%;padding-top: 10%;">
+                                                        <h5>
+                                                            Commitment To
+                                                            Compassion
+                                                        </h5>
+                                                        <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;font-size: small;">
+                                                            Understanding the diseases and the
+                                                            conditions of people. committing
+                                                            ourselves to the care necessary to
+                                                            enhance health and relieve suffering.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end  section -->
+                <section class="">
+                    <div class="container-fluid">
+                        <div class="row"
+                             style="background-image: url('../theme_azeer/static/src/images/hpp.png'); background-repeat: no-repeat;background-size: 100% 100%;">
+                            <div class="col-md-12" style="padding: 6%;">
+                                <div class="row">
+                                    <div class="col-md-2"/>
+                                    <div class="col-md-4">
+                                        <div class="heading_container heading_center">
+                                            <h2 style="font-weight: bold;color: #4a4848;padding-top: 3%;">
+                                                Our Clients
+
+                                            </h2>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6"/>
+                                </div>
+                                <div class="row">
+                                    <section class="client_section w-100">
+                                        <div class="container text-center CategoryContent">
+                                            <div class="row mx-auto my-auto d-lg-block">
+
+                                                <div class="carousel slide w-100" id="myCarousel1" data-ride="carousel">
+                                                    <div class="carousel-inner my_inner w-100" role="listbox">
+                                                        <div class="carousel-inner my_inner w-100" role="listbox">
+
+
+                                                            <t t-foreach="partners" t-as="partner">
+
+                                                                <t t-if="len(partners) &lt; 3">
+                                                                    <t t-set="col_numb"
+                                                                       t-value="int(12/(len(partners)))"/>
+                                                                </t>
+                                                                <t telse="">
+                                                                    <t t-set="col_numb" t-value="4"/>
+                                                                </t>
+                                                                <t t-set="active">
+
+                                                                    <div class="owl-item carousel-item my_item CategoryCarousel active">
+                                                                        <div t-attf-class="col-lg-{{col_numb}} col-md-3 ">
+
+                                                                            <div class=" h-100 w-50 text-center rounded-30 s_card_style_1 tp_product_card d-flex align-items-center justify-content-center " style="border-radius: 100px;">
+
+
+                                                                                <img
+                                                                                        t-attf-src="/web/image?model=res.partner&amp;field=image_1920&amp;id=#{partner.id}"
+                                                                                        class="img img-fluid rotate-center mdwimg"
+                                                                                        alt=""
+                                                                                        loading="lazy"/>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </t>
+                                                                <t t-set="content">
+                                                                    <div class="owl-item carousel-item my_item CategoryCarousel">
+                                                                        <div t-attf-class="col-lg-{{col_numb}} col-md-3 ">
+
+                                                                            <div class=" h-100 w-50 text-center rounded-30 s_card_style_1 tp_product_card d-flex align-items-center justify-content-center " style="border-radius: 100px;">
+
+                                                                                <img
+                                                                                        t-attf-src="/web/image?model=res.partner&amp;field=image_1920&amp;id=#{partner.id}"
+                                                                                        class="img img-fluid rotate-center mdwimg"
+                                                                                        alt=""
+                                                                                        loading="lazy"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </t>
+                                                                <t t-if="partner_first">
+                                                                    <t t-esc="active"/>
+                                                                </t>
+                                                                <t t-else="">
+                                                                    <t t-esc="content"></t>
+                                                                </t>
+                                                            </t>
+
+                                                        </div>
+                                                          </div>
+                                                        <div class="carousel_btn-container">
+                                                            <a class="carousel-control-prev"
+                                                               href="#carouselExample2Controls" role="button"
+                                                               data-slide="prev">
+                                                                <i class="fa fa-long-arrow-left"
+                                                                   aria-hidden="true"/>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            <a class="carousel-control-prev"
+                                                               href="#carouselExample2Controls" role="button"
+                                                               data-slide="prev">
+                                                                <i class="fa fa-long-arrow-left"
+                                                                   aria-hidden="true"/>
+                                                                <span class="sr-only">Previous</span>
+                                                            </a>
+                                                            <a class="carousel-control-next"
+                                                               href="#carouselExample2Controls" role="button"
+                                                               data-slide="next">
+                                                                <i class="fa fa-long-arrow-right"
+                                                                   aria-hidden="true"/>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                            <a class="carousel-control-next"
+                                                               href="#carouselExample2Controls" role="button"
+                                                               data-slide="next">
+                                                                <i class="fa fa-long-arrow-right"
+                                                                   aria-hidden="true"/>
+                                                                <span class="sr-only">Next</span>
+                                                            </a>
+                                                        </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- contact section -->
+                <!-- footer section -->
+                <t t-call="theme_azeer.footerazeer"/>
+            </body>
+        </xpath>
+        <!--        </data>-->
+    </template>
+    <template id="website_homepage_inherit_azeer_header_footer" inherit_id="web.frontend_layout" name="header"
+              active="True"
+              customize_show="True">
+        <xpath expr="//div[@id='wrapwrap']/header" position="replace"/>
+        <xpath expr="//div[@id='wrapwrap']/footer" position="replace"/>
+                <xpath expr="//div[@class='o_fullscreen_indication']" position="replace"/>
+
+
+    </template>
+    <!--    <template id="website.fullscreen_indication" >-->
+    <!-- <p></p>-->
+    <!--    </template>-->
+</odoo>

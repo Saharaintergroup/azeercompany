@@ -1,0 +1,229 @@
+#imghero{
+     max-width: 100%;
+     max-height: 100%;
+     display: block;
+     border: none;
+}
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+ @media only screen and (min-width: 200px) {
+     #lapiamge{
+         width: 10%;
+    }
+     #p30{
+         padding-top: 15%;
+    }
+     .hero_area {
+         position: relative;
+         min-height: 40vh;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+         flex-direction: column;
+    }
+     #imgov{
+         width: 16%;
+         margin: 9%;
+    }
+     p, .p {
+         font-size: 0.6rem;
+    }
+     h2, .h2 {
+         font-size: 1rem;
+    }
+     h1, .h1 {
+         font-size: 1rem;
+    }
+     #navbar-brand{
+         width: 15%;
+         height: 50%;
+    }
+     h3, .h3 {
+         font-size: 0.75rem;
+    }
+     h4, .h4 {
+         font-size: 0.8rem;
+    }
+     #lineh{
+         line-height: 1.2;
+    }
+     #pr{
+         font-size: 0.8em;
+         line-height: 16px;
+         letter-spacing: -0.056em;
+         margin-top: 10%;
+    }
+}
+ @media only screen and (max-width: 300px) {
+     #lapiamge{
+         width: 10%;
+    }
+     h2, .h2 {
+         font-size: 1.75rem;
+    }
+     #navbar-brand{
+         width: 25%;
+         height: 50%;
+    }
+     h3, .h3 {
+         font-size: 1rem;
+    }
+     h4, .h4 {
+         font-size: 0.8rem;
+    }
+     h1, .h1 {
+         font-size: 2.5rem;
+    }
+     #lineh{
+         line-height:1.2
+    }
+     #pr{
+         font-size: 0.8em;
+         line-height: 16px;
+         letter-spacing: -0.056em;
+         margin-top: 10%;
+    }
+     .hero_area {
+         position: relative;
+         min-height: 40vh;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+         flex-direction: column;
+    }
+}
+ @media only screen and (max-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+ @media only screen and (min-width: 600px) {
+     h2, .h2 {
+         font-size:1.5rem;
+    }
+     h1, .h1 {
+         font-size: 2.5rem;
+    }
+     #lapiamge{
+         width: 40%;
+    }
+     #navbar-brand{
+         width:25%;
+         height: 50%;
+         margin-left: 19px;
+         margin-right: 19px;
+    }
+     h3, .h3 {
+         font-size: 1rem;
+    }
+     h4, .h4 {
+         font-size: 0.75rem;
+    }
+     #pr{
+         margin-top: 25%;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+ @media only screen and (min-width: 768px) {
+}
+/* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 992px) {
+     #lapiamge{
+         width: 70%;
+    }
+     h1, .h1 {
+         font-size: 2.5rem;
+    }
+     h2, .h2 {
+         font-size: 2rem;
+    }
+     #navbar-brand{
+         width: 40%;
+         height: 50%;
+    }
+     h3, .h3 {
+         font-size: 1.75rem;
+    }
+     h4, .h4 {
+         font-size: 1.2rem;
+    }
+     #pr{
+         margin-top: 25%;
+    }
+     .hero_area {
+         position: relative;
+         min-height: 100vh;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+         flex-direction: column;
+    }
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+ @media only screen and (min-width: 1200px) {
+     p, .p {
+         font-size: 1rem;
+    }
+     #lapiamge{
+         width: 70%;
+    }
+     #imgov{
+         width: 80%;
+         margin: 20%;
+    }
+     h1, .h1 {
+         font-size: 2.5rem;
+    }
+     h2, .h2 {
+         font-size:1.7rem;
+    }
+     #navbar-brand{
+         width: 40%;
+         height: 50%;
+         margin-left: 40px;
+         margin-right: 40px;
+    }
+     h3, .h3 {
+         font-size: 1.5rem;
+    }
+     h4, .h4 {
+         font-size: 1.2rem;
+    }
+     #m40{
+         margin-left: 40px;
+         margin-right: 40px;
+    }
+     #lineh{
+         line-height:1.6
+    }
+     #pr{
+         margin-top: 25%;
+    }
+     #p30{
+         padding-top: 30%;
+    }
+     .hero_area {
+         position: relative;
+         min-height: 100vh;
+         display: -webkit-box;
+         display: -ms-flexbox;
+         display: flex;
+         -webkit-box-orient: vertical;
+         -webkit-box-direction: normal;
+         -ms-flex-direction: column;
+         flex-direction: column;
+    }
+}

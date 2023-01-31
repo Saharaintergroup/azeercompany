@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="asset_frontend" inherit_id="portal.frontend_layout" name="Theme azzer Frontend">
+            <xpath expr="//head/link[last()]" position="after">
+                <link href="/theme_azeer/static/src/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+                <link href="/theme_azeer/static/src/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+                <link href="/theme_azeer/static/src/css/style.css" rel="stylesheet" type="text/css"/>
+                <link href="/theme_azeer/static/src/css/responsive.css" rel="stylesheet" type="text/css"/>
+                <link href="/theme_azeer/static/src/css/custom.css" rel="stylesheet" type="text/css"/>
+                <link href="/theme_azeer/static/src/css/recustom.css" rel="stylesheet" type="text/css"/>
+                <script href="/theme_azeer/static/src/carousel.js" tytype="text/javascript"/>
+
+                <link href="https://fonts.cdnfonts.com/css/nexa-bold" rel="stylesheet"/>
+            </xpath>
+        </template>
+    </data>
+</odoo>

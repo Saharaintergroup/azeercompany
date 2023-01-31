@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="azeer_contactus_page" name="Contact us" inherit_id="website.contactus" active="True">
+
+            <xpath expr="//div[@id='wrap']" position="replace">
+                <t t-set="logged_partner"
+                   t-value="request.env['website.visitor']._get_visitor_from_request().partner_id"/>
+                <t t-set="contactus_form_values" t-value="{
+                'email_to': res_company.email,
+                'name': request.params.get('name', ''),
+                'phone': request.params.get('phone', ''),
+                'email_from': request.params.get('email_from', ''),
+                'company': request.params.get('company', ''),
+                'subject': request.params.get('subject', ''),
+            }"/>
+                <span class="hidden" data-for="contactus_form" t-att-data-values="contactus_form_values"/>
+
+
+                    <body style="background-color:white">
+                        <div class="hero_area" style="min-height: 600px;">
+
+                            <div class="hero_bg_box cc" id="img">
+                                <img id="imghero" src="../theme_azeer/static/src/images/contactus.png" alt="contactus"/>
+                            </div>
+
+                            <!-- header section strats -->
+                            <header class="header_section" id="header_section">
+                                <div class="container">
+                                    <nav class="navbar navbar-expand-lg custom_nav-container " id="#p-22">
+                                        <a class="navbar-brand" href="/" style="width:200px">
+                                            <img id="navbar-brand" src="../theme_azeer/static/src/images/logoazeer.png"
+                                                 alt="logo azeer" style="margin-left: 100px; margin-right: 100px;"
+                                            />
+                                        </a>
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                                data-target="#navbarSupportedContent"
+                                                aria-controls="navbarSupportedContent"
+                                                aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class=""></span>
+                                        </button>
+                                        <t t-call="theme_azeer.navazeer">
+
+                                        </t>
+                                    </nav>
+
+                                </div>
+                            </header>
+
+                        </div>
+                        <section class="department_section layout_padding">
+                            <div class="department_container">
+                                <div class="container ">
+
+
+                                    <div class="row">
+                                        <div class="col-md-7 col-xs-12">
+                                            <div class="heading_container ">
+                                                <h2 style="font-weight: bold;color: #4a4848;line-height: 1.6;">
+                                                    Leave A Message !
+                                                </h2>
+                                            </div>
+                                            <div class="form_container contact-form">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                        <form id="contactus_form" action="/website/form/" method="post"
+                                                              enctype="multipart/form-data" class="o_mark_required"
+                                                              data-mark="*" data-model_name="mail.mail"
+                                                              data-success-mode="redirect"
+                                                              data-success-page="/contactus-thank-you"
+                                                              data-pre-fill="true">
+
+                                                            <div class="input-group mb-3">
+
+                                                                <input style="background-color: #F4F3F3;border: none;"
+                                                                       type="text" class="form-control"
+                                                                       placeholder="Your Name"
+                                                                       aria-label="Your Name" data-fill-with="name"
+                                                                       aria-describedby="basic-addon1"/>
+                                                            </div>
+                                                            <div class="input-group mb-3">
+
+                                                                <input style="background-color: #F4F3F3;border: none;"
+                                                                       type="text" class="form-control"
+                                                                       placeholder="Email Address"
+                                                                       aria-label="Email Address" data-fill-with="email"
+                                                                       aria-describedby="basic-addon1"/>
+                                                            </div>
+                                                            <div class="input-group mb-3">
+
+                                                                <input style="background-color: #F4F3F3;border: none;"
+                                                                       type="text" class="form-control"
+                                                                       placeholder="Phone Number"
+                                                                       aria-label="Phone Number" data-fill-with="email"
+                                                                       aria-describedby="basic-addon1"/>
+                                                            </div>
+                                                            <div class="input-group mb-3">
+                                                                <textarea
+                                                                        style="background-color: #F4F3F3;border: none;color:gray;height: 100px;"
+                                                                        class="form-control" name="description"
+                                                                        placeholder="Your Message">Your Message
+                                                                </textarea>
+                                                            </div>
+                                                            <button style="background-color: #048076;width: 120px;border-radius: 25px;border: none;height: 40px;color: white;"
+                                                                    type="submit">
+                                                                Send
+                                                            </button>
+                                                        </form>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 col-xs-12">
+                                            <div class="heading_container ">
+                                                <h2 style="font-weight: bold;color: #4a4848;line-height: 1.6;">
+                                                    Keep In Touch
+                                                </h2>
+                                                <div class="row">
+                                                    <ul>
+                                                        <li style="list-style: none;">
+                                                            <i style="color: #4a4848;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                                               class="fa fa-phone d-inline-block"></i>
+                                                            <p class="d-inline-block"
+                                                               style="color: #999898;font-size: small;font-weight: bold;">
+                                                                +218 91 218 7949 - 21 477 0643
+
+                                                            </p>
+                                                            <br/>
+                                                            <i style="color: #4a4848;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                                               class="fa fa-phone d-inline-block"></i>
+                                                            <p class="d-inline-block"
+                                                               style="color: #999898;font-size: small;font-weight: bold;">
+
+                                                            </p>
+
+                                                            <p class="d-inline-block"
+                                                               style="color: #999898;font-size: small;font-weight: bold;">
+                                                                +218 +218 21 727 9750 -
+                                                            </p>
+
+                                                            <p class="d-inline-block"
+                                                               style="color: #999898;font-size: small;font-weight: bold;">
+                                                                +917 55 901 7326
+
+                                                            </p>
+                                                        </li>
+                                                        <li style="list-style: none;">
+                                                            <i style="color: #4a4848;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                                               class="fa fa-whatsapp d-inline-block"></i>
+                                                            <p class="d-inline-block"
+                                                               style="color: #999898;font-size: small;font-weight: bold;">
+                                                                +218 91 218 7949
+                                                            </p>
+                                                        </li>
+
+                                                        <li style="list-style: none;">
+                                                            <i style="color: #4a4848;font-size: larger;padding-left: 5px;padding-right: 5px;"
+                                                               class="fa fa-envelope d-inline-block"></i>
+                                                            <p class="d-inline-block"
+                                                               style="color: #999898;font-size: small;font-weight: bold;">
+                                                                info@azeergroup.com
+                                                            </p>
+                                                        </li>
+                                                    </ul>
+
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="row">
+                                                <div style="text-align: center;">
+
+                                                    <div class="footer_social">
+                                                        <a href="/website/social/facebook" target="_blank">
+                                                            <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
+                                                               class="fa fa-facebook"></i>
+                                                        </a>
+                                                        <a href="/website/social/twitter" target="_blank">
+                                                            <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
+                                                               class="fa fa-twitter"></i>
+                                                        </a>
+                                                        <a href="/website/social/linkedin" target="_blank">
+                                                            <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
+                                                               class="fa fa-linkedin"></i>
+                                                        </a>
+                                                        <a href="/website/social/instagram" target="_blank">
+
+                                                            <i style="color: #c1c0c0;font-size: 27px;padding-left: 5px;padding-right: 5px;margin: 14px;"
+                                                               class="fa fa-instagram"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </section>
+                        <section class=""
+                                 style="  margin-bottom: -150px;">
+                            <div class="container-fluid ">
+                                <div class="row"
+                                >
+                                    <div class="mapouter">
+                                        <div class="gmap_canvas">
+                                            <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+                                                    marginwidth="0"
+                                                    src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q= Al Saray laboratory سراي للخدمات الطبية&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                                            <a href="https://www.gachacute.com/">Download</a>
+                                        </div>
+                                        <style>
+                                            .mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas
+                                            {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe
+                                            {width:100%!important;height:400px!important;}
+                                        </style>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <t t-call="theme_azeer.footerazeer">
+                        </t>
+                    </body>
+            </xpath>
+        </template>
+        <record id="azeer_contactus_main" model="website.page">
+            <field name="name">Contact us</field>
+            <field name="website_published">True</field>
+            <field name="url">/contactus</field>
+            <field name="view_id" ref="azeer_contactus_page"/>
+        </record>
+
+
+    </data>
+</odoo>

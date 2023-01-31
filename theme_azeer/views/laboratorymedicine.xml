@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <template id="laboratory_medicine_page" name="Laboratory Medicine">
+
+            <t t-call="website.layout">
+                <body>
+                    <div class="hero_area">
+
+                        <div class="hero_bg_box cc" id="img" style="border: none;">
+                            <img id="imghero" src="../theme_azeer/static/src/images/lm.png" alt="Laboratory Medicine"/>
+                            <div class="centered">
+                                <h1 style="color: white;font-weight: bold;">Laboratory Medicine</h1>
+                            </div>
+
+                        </div>
+
+                        <!-- header section strats -->
+                        <header class="header_section" id="header_section">
+                            <div class="container">
+                                <nav class="navbar navbar-expand-lg custom_nav-container " id="#p-22">
+                                    <a class="navbar-brand" href="/" style="width:200px">
+                                        <img id="navbar-brand" src="../theme_azeer/static/src/images/logoazeer.png"
+                                             alt="logo azeer" style="margin-left: 100px; margin-right: 100px;"
+                                        />
+                                    </a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                            aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class=""></span>
+                                    </button>
+                                    <t t-call="theme_azeer.navazeer">
+
+                                    </t>
+                                </nav>
+
+                            </div>
+                        </header>
+
+                    </div>
+                    <section class=" layout_padding" style="background-color: white;">
+                        <div class="department_container">
+                            <div class="container ">
+
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="heading_container ">
+                                            <h2 style="font-weight: bold;color: #4a4848;line-height: 1.6">
+                                                What Is Laboratory
+                                                Medicine?
+                                            </h2>
+
+                                            <h3 style="line-height: 1.5;color: #646060;">
+                                                Laboratory medicine / pathology is
+                                                the branch of medicine that studies
+                                                samples of blood, urine, tissue and
+                                                bodily fluids to identify patients at
+                                                risk of disease, to determine the
+                                                cause and nature of disease, and
+                                                to guide and monitor treatment
+                                                and progress of disease
+                                                management.
+                                            </h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="img-box">
+                                            <img style="border-radius: 0px; border: medium none;width: 100%;"
+                                                 src="../theme_azeer/static/src/images/labmedicine.png"
+                                                 alt="labmedicine"/>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class=" layout_padding" style="background-color: white;">
+                        <div class="department_container">
+                            <div class="container ">
+                                <div class="heading_container row ">
+                                    <h1 class="col-md-10" style="font-weight: bold;color: #039184;line-height: 1.2;">
+                                        Types Of Laboratory Medicine / Pathology
+                                        Testing That We Provide:
+                                    </h1>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row"
+                                             style="box-shadow: 1px 10px 39px 0px gray;border-radius: 10px;padding: 2%;width: 90%;height: 150px;margin-bottom: 10px;">
+                                            <div class="col-md-4">
+                                                <div class="img-box">
+                                                    <img src="/theme_azeer/static/src/icon/bochemistry.png"
+                                                         alt="bochemistry" id="lapiamge"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="detail-box">
+                                                    <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                        Biochemistry
+                                                    </h6>
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                        The Measurement Of Different
+                                                        Chemical Substances In The
+                                                        Body
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="row"
+                                             style="box-shadow: 1px 10px 39px 0px gray;border-radius: 10px;padding: 2%;width: 90%;height: 150px;margin-bottom: 10px;">
+                                            <div class="col-md-4">
+                                                <div class="img-box">
+                                                    <img src="/theme_azeer/static/src/icon/histopathology.png"
+                                                         alt="histopathology" id="lapiamge"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="detail-box">
+                                                    <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                        Histopathology
+                                                    </h6>
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                        The Examination Of Tissue
+                                                        Samples By Anatomical
+                                                        Pathologists To Diagnose Cancer
+                                                        And Other Conditions
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row"
+                                             style="box-shadow: 1px 10px 39px 0px gray;border-radius: 10px;padding: 2%;width: 90%;height: 150px;margin-bottom: 10px;">
+                                            <div class="col-md-4">
+                                                <div class="img-box">
+                                                    <img src="/theme_azeer/static/src/icon/cytopathology.png"
+                                                         alt="cytopathology" id="lapiamge"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="detail-box">
+                                                    <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                        Cytopathology
+                                                    </h6>
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                        The Study Of Cells And Cell
+                                                        Structure To Detect Cancerous And
+                                                        Pre-Cancerous Changes
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="row"
+                                             style="box-shadow: 1px 10px 39px 0px gray;border-radius: 10px;padding: 2%;width: 90%;height: 150px;margin-bottom: 10px;">
+                                            <div class="col-md-4">
+                                                <div class="img-box">
+                                                    <img src="/theme_azeer/static/src/icon/immunoserology.png"
+                                                         alt="immunoserology" id="lapiamge"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="detail-box">
+                                                    <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                        Immunoserology
+                                                    </h6>
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                        The Measurement Of Antibody
+                                                        Levels And Other Factors In The
+                                                        Blood To Assess Immune Status
+                                                        And Diagnose Diseases
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row"
+                                             style="box-shadow: 1px 10px 39px 0px gray;border-radius: 10px;padding: 2%;width: 90%;height: 150px;margin-bottom: 10px;">
+                                            <div class="col-md-4">
+                                                <div class="img-box">
+                                                    <img src="/theme_azeer/static/src/icon/haematology.png"
+                                                         alt="haematology" id="lapiamge"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="detail-box">
+                                                    <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                        Haematology
+                                                    </h6>
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                        The Study Of Blood Cells, Blood
+                                                        Producing Organs And Blood
+                                                        Diseases
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+                                    <div class="col-md-6">
+                                        <div class="row"
+                                             style="box-shadow: 1px 10px 39px 0px gray;border-radius: 10px;padding: 2%;width: 90%;height: 150px;margin-bottom: 10px;">
+                                            <div class="col-md-4">
+                                                <div class="img-box">
+                                                    <img src="/theme_azeer/static/src/icon/toxicology.png"
+                                                         alt="toxicology" id="lapiamge"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="detail-box">
+                                                    <h6 style="color: #039184;font-weight: 626;font-style: normal;">
+                                                        Toxicology
+                                                    </h6>
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                        The Testing Of Body Fluids To
+                                                        Detect The Presence Of
+                                                        Chemicals, Drugs Or Toxins
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <t t-call="theme_azeer.footerazeer">
+                    </t>
+                </body>
+            </t>
+        </template>
+
+
+    </data>
+</odoo>
