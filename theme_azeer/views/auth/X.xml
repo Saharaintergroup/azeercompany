@@ -1,0 +1,121 @@
+                <div class="container text-center CategoryContent">
+ <div class="row mx-auto my-auto d-none d-lg-block">
+                        <div class="carousel slide w-100" id="myCarousel1" data-ride="carousel">
+                            <div class="carousel-inner my_inner w-100" role="listbox">
+                                <t t-if="request.session.uid">
+                                    <t t-foreach="categories" t-as="category">
+                                        <t t-set="categoryName">
+                                            <t t-value='#{slug(category.name)}'></t>
+                                        </t>
+                                        <t t-set="categoryName"/>
+                                        <t t-if="len(categories) &lt; 6">
+                                            <t t-set="col_numb" t-value="int(12/(len(categories)))"/>
+                                        </t>
+                                        <t telse="">
+                                            <t t-set="col_numb" t-value="2"/>
+                                        </t>
+                                        <t t-set="active">
+                                            <div class="owl-item carousel-item my_item CategoryCarousel active">
+                                                <div t-attf-class="col-lg-{{col_numb}} col-md-3 ">
+
+                                                    <div class="card h-100 text-center rounded-0 s_card_style_1 tp_product_card">
+                                                        <a t-att-href="'/shop/category/' + str(categoryName)+'-' + str(category.id)"
+                                                           class="d_product_box d-flex align-items-center position-relative flex-column justify-content-center">
+                                                            <span t-field="category.image_512"
+                                                                  t-options="{'widget': 'image','class': 'card-img-top d-product-img'}"/>
+                                                            <h5>
+                                                                <t t-esc="category.name"></t>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                        <t t-set="content">
+                                            <div class="owl-item carousel-item my_item CategoryCarousel">
+                                                <div t-attf-class="col-lg-{{col_numb}} col-md-3 ">
+
+                                                    <div class="card h-100 text-center rounded-0 s_card_style_1 tp_product_card">
+                                                        <a t-att-href="'/shop/category/' + str(categoryName)+'-' + str(category.id)"
+                                                           class="d_product_box d-flex align-items-center position-relative flex-column justify-content-center">
+                                                            <span t-field="category.image_512"
+                                                                  t-options="{'widget': 'image','class': 'card-img-top d-product-img'}"/>
+                                                            <h5>
+                                                                <t t-esc="category.name"></t>
+                                                            </h5>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                        <t t-if="category_first">
+                                            <t t-esc="active"/>
+                                        </t>
+                                        <t t-else="">
+                                            <t t-esc="content"></t>
+                                        </t>
+                                    </t>
+                                </t>
+                                <t t-if="not request.session.uid">
+                                    <t t-foreach="guest_categories" t-as="category">
+                                        <t t-set="categoryName">
+                                            <t t-value='#{slug(category.name)}'></t>
+                                        </t>
+                                        <t t-set="categoryName"/>
+                                        <t t-if="len(guest_categories) &lt; 6">
+                                            <t t-set="col_numb" t-value="int(12/(len(guest_categories)))"/>
+
+                                        </t>
+                                        <t telse="">
+                                            <t t-set="col_numb" t-value="2"/>
+                                        </t>
+                                        <t t-set="active">
+                                            <div class="carousel-item my_item CategoryCarousel active ">
+                                                <div t-attf-class="col-lg-{{col_numb}} col-md-3 ">
+                                                    <a t-att-href="'/shop/category/' + str(categoryName)+'-' + str(category.id)">
+                                                        <span t-field="category.image_512"
+                                                              t-options="{'widget': 'image','class': ' img-thumbnail catImage'}"/>
+                                                    </a>
+                                                    <h5>
+                                                        <t t-esc="category.name"></t>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </t>
+                                        <t t-set="content">
+                                            <div class="carousel-item my_item CategoryCarousel ">
+                                                <div t-attf-class="col-lg-{{col_numb}} col-md-3 ">
+                                                    <a t-att-href="'/shop/category/' + str(categoryName)+'-' + str(category.id)">
+                                                        <span t-field="category.image_512"
+                                                              t-options="{'widget': 'image','class': ' img-thumbnail catImage'}"/>
+                                                    </a>
+                                                    <h5>
+                                                        <t t-esc="category.name"></t>
+                                                    </h5>
+                                                </div>
+                                            </div>
+                                        </t>
+                                        <t t-if="category_first">
+                                            <t t-esc="active"/>
+                                        </t>
+                                        <t t-else="">
+                                            <t t-esc="content"></t>
+                                        </t>
+                                    </t>
+                                </t>
+                            </div>
+                            <t t-if="category_index">
+                                <t t-if="category_index &gt; 5">
+                                    <a class="carousel-control-prev w-auto categoryNavigation" href="#myCarousel1"
+                                       role="button" data-slide="prev">
+                                        <i class="dri dri-arrow-left-l"/>
+                                    </a>
+                                    <a class="carousel-control-next w-auto categoryNavigation" href="#myCarousel1"
+                                       role="button" data-slide="next">
+                                        <i class="dri dri-arrow-right-l"/>
+                                    </a>
+                                </t>
+                            </t>
+
+                        </div>
+                    </div>                    </div>
