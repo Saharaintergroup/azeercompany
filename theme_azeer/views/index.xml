@@ -86,10 +86,13 @@
                                     <span class="sr-only">Next</span>
                                 </a>
                                 <ol class="carousel-indicators"
-                                    style="padding-bottom: -15px;margin-bottom: 0px;position: absolute;bottom: 120px;">
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"/>
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"/>
-                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"/>
+                                    style="padding-bottom: -15px;margin-bottom: 0px;position: absolute;bottom: 315px;left: 1227px;display: block;">
+                                    <li style="width: 8px;height: 20px;border-radius: 32%;"
+                                        data-target="#carouselExampleCaptions" data-slide-to="0" class="active"/>
+                                    <li style="width: 8px;height: 20px;border-radius: 32%;"
+                                        data-target="#carouselExampleCaptions" data-slide-to="1"/>
+                                    <li style="width: 8px;height: 20px;border-radius: 32%;"
+                                        data-target="#carouselExampleCaptions" data-slide-to="2"/>
                                 </ol>
                             </div>
                         </div>
@@ -132,7 +135,7 @@
                                                 <div class="detail-box">
                                                     <h6 style="color: #039184;font-weight: 626;font-style: normal;">
 
-                                                        We Deliver Fastz
+                                                        We Deliver Fast
                                                     </h6>
                                                     <p style="margin-top: 0;margin-bottom: 1rem;width: 193px;color: #4f4d4d;">
                                                         We value time and use it
@@ -348,7 +351,8 @@
                                                                     <div class="owl-item carousel-item my_item CategoryCarousel active">
                                                                         <div t-attf-class="col-lg-{{col_numb}} col-md-3 ">
 
-                                                                            <div class=" h-100 w-50 text-center rounded-30 s_card_style_1 tp_product_card d-flex align-items-center justify-content-center " style="border-radius: 100px;">
+                                                                            <div class=" h-100 w-50 text-center rounded-30 s_card_style_1 tp_product_card d-flex align-items-center justify-content-center "
+                                                                                 style="border-radius: 100px;">
 
 
                                                                                 <img
@@ -365,7 +369,8 @@
                                                                     <div class="owl-item carousel-item my_item CategoryCarousel">
                                                                         <div t-attf-class="col-lg-{{col_numb}} col-md-3 ">
 
-                                                                            <div class=" h-100 w-50 text-center rounded-30 s_card_style_1 tp_product_card d-flex align-items-center justify-content-center " style="border-radius: 100px;">
+                                                                            <div class=" h-100 w-50 text-center rounded-30 s_card_style_1 tp_product_card d-flex align-items-center justify-content-center "
+                                                                                 style="border-radius: 100px;">
 
                                                                                 <img
                                                                                         t-attf-src="/web/image?model=res.partner&amp;field=image_1920&amp;id=#{partner.id}"
@@ -385,37 +390,37 @@
                                                             </t>
 
                                                         </div>
-                                                          </div>
-                                                        <div class="carousel_btn-container">
-                                                            <a class="carousel-control-prev"
-                                                               href="#carouselExample2Controls" role="button"
-                                                               data-slide="prev">
-<!--                                                              >  <i class="fa fa-long-arrow-left"-->
-<!--                                                                   aria-hidden="true"/-->
-                                                                <span class="sr-only">Previous</span>
-                                                            </a>
-                                                            <a class="carousel-control-prev"
-                                                               href="#carouselExample2Controls" role="button"
-                                                               data-slide="prev">
-<!--                                                                <i class="fa fa-long-arrow-left"-->
-<!--                                                                   aria-hidden="true"/>-->
-                                                                <span class="sr-only">Previous</span>
-                                                            </a>
-                                                            <a class="carousel-control-next"
-                                                               href="#carouselExample2Controls" role="button"
-                                                               data-slide="next">
-<!--                                                                <i class="fa fa-long-arrow-right"-->
-<!--                                                                   aria-hidden="true"/>-->
-                                                                <span class="sr-only">Next</span>
-                                                            </a>
-                                                            <a class="carousel-control-next"
-                                                               href="#carouselExample2Controls" role="button"
-                                                               data-slide="next">
-<!--                                                                <i class="fa fa-long-arrow-right"-->
-<!--                                                                   aria-hidden="true"/>-->
-                                                                <span class="sr-only">Next</span>
-                                                            </a>
-                                                        </div>
+                                                    </div>
+                                                    <div class="carousel_btn-container">
+                                                        <a class="carousel-control-prev"
+                                                           href="#carouselExample2Controls" role="button"
+                                                           data-slide="prev">
+                                                            <!--                                                              >  <i class="fa fa-long-arrow-left"-->
+                                                            <!--                                                                   aria-hidden="true"/-->
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                        <a class="carousel-control-prev"
+                                                           href="#carouselExample2Controls" role="button"
+                                                           data-slide="prev">
+                                                            <!--                                                                <i class="fa fa-long-arrow-left"-->
+                                                            <!--                                                                   aria-hidden="true"/>-->
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                        <a class="carousel-control-next"
+                                                           href="#carouselExample2Controls" role="button"
+                                                           data-slide="next">
+                                                            <!--                                                                <i class="fa fa-long-arrow-right"-->
+                                                            <!--                                                                   aria-hidden="true"/>-->
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                        <a class="carousel-control-next"
+                                                           href="#carouselExample2Controls" role="button"
+                                                           data-slide="next">
+                                                            <!--                                                                <i class="fa fa-long-arrow-right"-->
+                                                            <!--                                                                   aria-hidden="true"/>-->
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </div>
 
                                                 </div>
                                             </div>
@@ -438,10 +443,9 @@
               customize_show="True">
         <xpath expr="//div[@id='wrapwrap']/header" position="replace"/>
         <xpath expr="//div[@id='wrapwrap']/footer" position="replace"/>
-                 <!--    <xpath expr="//div[@class='o_fullscreen_indication']" position="replace"/> >-->
+        <!--    <xpath expr="//div[@class='o_fullscreen_indication']" position="replace"/> >-->
 
 
     </template>
-  
-</odoo>
 
+</odoo>

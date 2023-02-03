@@ -351,8 +351,10 @@ a:focus {
 
 .slider_section .carousel-indicators li.active {
  width: 22px;
-  height: 8px;
+  height: 27px !important;
   border-radius: 10%;
+  background-color:#005055;
+
 }
 
 .department_section {
