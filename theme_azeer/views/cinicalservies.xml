@@ -12,7 +12,7 @@
                             <img id="imghero" src="../theme_azeer/static/src/images/CLINICALSEVICES.png"
                                  alt="CLINICAL SEVICES"/>
                             <div class="centered">
-                                                            <h1 style="color: white;font-weight: bold;">Clinical Service</h1>
+                                                            <h1 style="color: white;font-weight: bold;">Clinical Services</h1>
                             </div>
                         </div>
 
@@ -47,26 +47,26 @@
                                     <div class="col-md-5">
                                         <div class="heading_container ">
                                             <h2 style="font-weight: bold;color: #039184;line-height: 1.6">
-                                                Saray Salam
+                                                Saray salam
                                             </h2>
 
                                             <h3 style="line-height: 1.5;color: #646060;">
-                                                A Comprehensive Cancer Center That Provides
-                                                Screening, Diagnostic, Treatment, Survivorship And
-                                                Palliative Care For Cancer Patients As One Integrated
-                                                Care System.
+                                                A comprehensive cancer center that provides
+                                                screening, diagnostic, treatment, survivorship and
+                                                palliative care for cancer patients as one integrated
+                                                care system.
                                             </h3>
                                             <br/>
                                             <br/>
                                             <h3 style="font-weight: bold;color: #039184;line-height: 1.6">
-                                                Facilities and Services At Saray Salam Center
+                                                Facilities and services at saray salam center
                                             </h3>
                                             <h4 style="line-height: 1.5;color: #646060;">
-                                                Clinical Management And Outpatient Department.
-                                                Medical Imagings (X-Ray, Ultrasound And Mammogram)
-                                                Pathology And Laboratory Medicine.
-                                                Systemic Cancer Therapy; Chemotherapy, Iv/Oral
-                                                Administration And Pharmacy.
+                                                Clinical management and outpatient department.
+                                                medical imaging (x-ray, ultrasound, and mammogram)
+                                                pathology and laboratory medicine.
+                                                systemic cancer therapy; chemotherapy, iv/oral
+                                                administration, and pharmacy.
                                             </h4>
 
                                         </div>
@@ -96,7 +96,7 @@
                                     </h2>
                                 </div>
                                 <div class="heading_container ">
-                                    <h4 style="font-weight: bold;color: #646060;line-height: 1.6;">
+                                    <h4 style="color: #646060;line-height: 1.6;">
                                         Day care chemotherapy is one of the novel concepts in cancer care. In many
                                         cases,
                                         chemotherapy patients do not even require a bed; they can receive treatment on a
