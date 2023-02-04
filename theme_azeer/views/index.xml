@@ -77,13 +77,13 @@
                                 </div>
                                 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button"
                                    data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"/>
-                                    <span class="sr-only">Previous</span>
+<!--                                    <span class="carousel-control-prev-icon" aria-hidden="true"/>-->
+<!--                                    <span class="sr-only">Previous</span>-->
                                 </a>
                                 <a class="carousel-control-next" href="#carouselExampleCaptions" role="button"
                                    data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"/>
-                                    <span class="sr-only">Next</span>
+<!--                                    <span class="carousel-control-next-icon" aria-hidden="true"/>-->
+<!--                                    <span class="sr-only">Next</span>-->
                                 </a>
                                 <ol class="carousel-indicators"
                                     style="padding-bottom: -15px;margin-bottom: 0px;position: absolute;bottom: 315px;left: 1227px;display: block;">
@@ -104,10 +104,10 @@
                         <div class="container " style="padding: 34px;">
                             <div class="heading_container ">
                                 <h4 style="  color: #555151;font-weight: bold;" id="lineh">
-                                    Azeer Holding Group Works As A Parent Of Smaller Multinational Companies
-                                    Specialized In Diagnostic Solutions – Distributing A Wide Range Of Medical
-                                    Instruments, Reagents, Software And Services, Used By Laboratories Across
-                                    More Than 50 Facilities In Libya.
+                                    Azeer holding group works as a parent of smaller multinational companies
+                                    specialized in diagnostic solutions – distributing a wide range of medical
+                                    instruments, reagents, software, and services, used by laboratories across
+                                    more than 50 facilities in libya.
                                 </h4>
                             </div>
                         </div>
@@ -156,7 +156,7 @@
                                                         We Go For The Whole
                                                         Package
                                                     </h6>
-                                                    <p style="margin-top: 0;margin-bottom: 1rem;width: 193px;color: #4f4d4d;">
+                                                    <p style="margin-top: 0;margin-bottom: 1rem;width:225px;color: #4f4d4d;">
                                                         You are able to select any of
                                                         the medical supplies from a
                                                         wide range of stocks for your
