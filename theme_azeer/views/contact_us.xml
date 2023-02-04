@@ -22,6 +22,9 @@
 
                             <div class="hero_bg_box cc" id="img">
                                 <img id="imghero" src="../theme_azeer/static/src/images/contactus.png" alt="contactus"/>
+                           <div class="centered">
+                                                            <h1 style="color: white;font-weight: bold;">Contact Us</h1>
+                            </div>
                             </div>
 
                             <!-- header section strats -->
