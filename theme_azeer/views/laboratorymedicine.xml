@@ -85,7 +85,7 @@
                             <div class="container ">
                                 <div class="heading_container row ">
                                     <h1 class="col-md-10" style="font-weight: bold;color: #039184;line-height: 1.2;">
-                                        Types Of Laboratory Medicine
+                                        Types Of
                                         Testing That We Provide:
                                     </h1>
                                 </div>
@@ -100,15 +100,13 @@
                                                          alt="bochemistry" id="lapiamge"/>
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8"  style="padding-top: 3%;">
                                                 <div class="detail-box">
                                                     <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                         Biochemistry
                                                     </h6>
                                                     <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                        The Measurement Of Different
-                                                        Chemical Substances In The
-                                                        Body
+                                                        The measurement of different chemical substances in the body y
                                                     </p>
                                                 </div>
                                             </div>
@@ -124,16 +122,13 @@
                                                          alt="histopathology" id="lapiamge"/>
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8"  style="padding-top: 3%;">
                                                 <div class="detail-box">
                                                     <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                         Histopathology
                                                     </h6>
                                                     <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                        The Examination Of Tissue
-                                                        Samples By Anatomical
-                                                        Pathologists To Diagnose Cancer
-                                                        And Other Conditions
+                                                        The examination of tissue samples by anatomical pathologists to diagnose cancer and other conditions
                                                     </p>
                                                 </div>
                                             </div>
@@ -153,15 +148,15 @@
                                                          alt="cytopathology" id="lapiamge"/>
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8"  style="padding-top: 3%;">
                                                 <div class="detail-box">
                                                     <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                         Cytopathology
                                                     </h6>
                                                     <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                        The Study Of Cells And Cell
-                                                        Structure To Detect Cancerous And
-                                                        Pre-Cancerous Changes
+                                                        The study of cells and cell
+                                                        structure to detect cancerous and
+                                                        pre-cancerous changes
                                                     </p>
                                                 </div>
                                             </div>
@@ -179,16 +174,16 @@
                                                          alt="immunoserology" id="lapiamge"/>
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8"  style="padding-top: 3%;">
                                                 <div class="detail-box">
                                                     <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                         Immunoserology
                                                     </h6>
                                                     <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                        The Measurement Of Antibody
-                                                        Levels And Other Factors In The
-                                                        Blood To Assess Immune Status
-                                                        And Diagnose Diseases
+                                                        The measurement of antibody
+                                                        levels and other factors in the
+                                                        blood to assess immune status
+                                                        and diagnose diseases
                                                     </p>
                                                 </div>
                                             </div>
@@ -208,15 +203,15 @@
                                                          alt="haematology" id="lapiamge"/>
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8"  style="padding-top: 3%;">
                                                 <div class="detail-box">
                                                     <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                         Haematology
                                                     </h6>
                                                     <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                        The Study Of Blood Cells, Blood
-                                                        Producing Organs And Blood
-                                                        Diseases
+                                                        The study of blood cells, blood
+                                                        producing organs and blood
+                                                        diseases
                                                     </p>
                                                 </div>
                                             </div>
@@ -234,15 +229,15 @@
                                                          alt="toxicology" id="lapiamge"/>
                                                 </div>
                                             </div>
-                                            <div class="col-md-8">
+                                            <div class="col-md-8"  style="padding-top: 3%;">
                                                 <div class="detail-box">
                                                     <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                         Toxicology
                                                     </h6>
                                                     <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                        The Testing Of Body Fluids To
-                                                        Detect The Presence Of
-                                                        Chemicals, Drugs Or Toxins
+                                                        The testing of body fluids to
+                                                        detect the presence of
+                                                        chemicals, drugs or toxins
                                                     </p>
                                                 </div>
                                             </div>
