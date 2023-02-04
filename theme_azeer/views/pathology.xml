@@ -50,11 +50,9 @@
                                             </h2>
 
                                             <h3 style="line-height: 1.5;color: #646060;">
-                                                Onco-pathology is an indispensible and distinct division of pathology
-                                                department. It
-                                                encompasses a wide range of blood, bone marrow and related disorders
-                                                including
-                                                both benign and malignant diseases
+                                                Onco-pathology is an indispensable and distinct division of the
+                                                pathology department. it encompasses a wide range of blood, bone marrow,
+                                                and related disorders including both benign and malignant diseases
                                             </h3>
                                         </div>
                                     </div>
@@ -98,7 +96,7 @@
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                                                     Biopsy
                                                                                 </h6>
-                                                                                <p style="margin-top: 0;margin-bottom: 1rem;width: 193px;color: #4f4d4d;">
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;padding: 1%;">
                                                                                     A biopsy is the removal of tissue
                                                                                     from
                                                                                     any part of the body to examine it
@@ -124,7 +122,7 @@
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                                                     FNAC
                                                                                 </h6>
-                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;padding: 1%;">
                                                                                     Fine Needle Aspiration Cytology are
                                                                                     done to study and examine masses or
                                                                                     lumps under the surface of the skin
@@ -150,7 +148,7 @@
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                                                     Bone Marrow
                                                                                 </h6>
-                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;padding: 1%;">
                                                                                     Bone marrow aspiration and bone
                                                                                     marrow biopsy can show whether your
                                                                                     bone marrow is healthy and making
@@ -179,7 +177,7 @@
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                                                     Biopsy
                                                                                 </h6>
-                                                                                <p style="margin-top: 0;margin-bottom: 1rem;width: 193px;color: #4f4d4d;">
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;padding: 1%;">
                                                                                     A biopsy is the removal of tissue
                                                                                     from
                                                                                     any part of the body to examine it
@@ -205,7 +203,7 @@
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                                                     FNAC
                                                                                 </h6>
-                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;padding: 1%;">
                                                                                     Fine Needle Aspiration Cytology are
                                                                                     done to study and examine masses or
                                                                                     lumps under the surface of the skin
@@ -231,7 +229,7 @@
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
                                                                                     Bone Marrow
                                                                                 </h6>
-                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
+                                                                                <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;padding: 1%;">
                                                                                     Bone marrow aspiration and bone
                                                                                     marrow biopsy can show whether your
                                                                                     bone marrow is healthy and making
@@ -248,19 +246,20 @@
                                                                 </div>
                                                             </div>
 
+
                                                         </div>
                                                         <div class="carousel_btn-container">
                                                             <a class="carousel-control-prev"
                                                                href="#carouselExample2Controls" role="button"
                                                                data-slide="prev">
-<!--                                                                <i class="fa fa-long-arrow-left" aria-hidden="true"/>-->
+                                                                <!--                                                                <i class="fa fa-long-arrow-left" aria-hidden="true"/>-->
                                                                 <span class="sr-only">Previous</span>
                                                             </a>
 
                                                             <a class="carousel-control-next"
                                                                href="#carouselExample2Controls" role="button"
                                                                data-slide="next">
-<!--                                                                <i class="fa fa-long-arrow-right" aria-hidden="true"/>-->
+                                                                <!--                                                                <i class="fa fa-long-arrow-right" aria-hidden="true"/>-->
                                                                 <span class="sr-only">Next</span>
                                                             </a>
 
