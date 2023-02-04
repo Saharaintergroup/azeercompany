@@ -52,12 +52,10 @@
 
                                             <h3 style="line-height: 1.5;color: #646060;">
                                                 Radiology is the branch of medicine that uses non-invasive technology to
-                                                create
-                                                images of the bones, tissues and organs within the human body. these
-                                                images are
-                                                interpreted by a radiologist to identify or monitor diseases or
-                                                injuries. the results are
-                                                then included in a written report to the referring doctor
+                                                create images of the bones, tissues, and organs within the human body.
+                                                these images are interpreted by a radiologist to identify or monitor
+                                                diseases or injuries. the results are then included in a written report
+                                                to the referring doctor
                                             </h3>
                                         </div>
                                     </div>
@@ -123,14 +121,16 @@
                                                                             </div>
                                                                             <div class="detail-box">
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
-                                                                                    We Go For The Whole
-                                                                                    Package
+                                                                                    X-Ray
                                                                                 </h6>
                                                                                 <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                                                    You are able to select any of
-                                                                                    the medical supplies from a
-                                                                                    wide range of stocks for your
-                                                                                    clinical needs
+                                                                                    The most common form of medical
+                                                                                    imaging. useful for examining bones,
+                                                                                    joints, some spinal conditions, the
+                                                                                    teeth
+                                                                                    and jaws, and aids in the diagnosis
+                                                                                    of
+                                                                                    many chest and lung conditions
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -144,12 +144,14 @@
                                                                             </div>
                                                                             <div class="detail-box">
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
-                                                                                    We Hardly Run Low
+                                                                                    Mammography
                                                                                 </h6>
                                                                                 <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                                                    With immediate access, you
-                                                                                    can check hundreds of items
-                                                                                    with an enduring shelf-life
+                                                                                    A specific type of breast imaging
+                                                                                    that
+                                                                                    uses low-dose x-rays for the early
+                                                                                    detection of cancer and another breast
+                                                                                    disease
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -191,14 +193,16 @@
                                                                             </div>
                                                                             <div class="detail-box">
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
-                                                                                    We Go For The Whole
-                                                                                    Package
+                                                                                    X-Ray
                                                                                 </h6>
                                                                                 <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                                                    You are able to select any of
-                                                                                    the medical supplies from a
-                                                                                    wide range of stocks for your
-                                                                                    clinical needs
+                                                                                    The most common form of medical
+                                                                                    imaging. useful for examining bones,
+                                                                                    joints, some spinal conditions, the
+                                                                                    teeth
+                                                                                    and jaws, and aids in the diagnosis
+                                                                                    of
+                                                                                    many chest and lung conditions
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -212,12 +216,14 @@
                                                                             </div>
                                                                             <div class="detail-box">
                                                                                 <h6 style="color: #039184;font-weight: 626;font-style: normal;">
-                                                                                    We Hardly Run Low
+                                                                                    Mammography
                                                                                 </h6>
                                                                                 <p style="margin-top: 0;margin-bottom: 1rem;color: #4f4d4d;">
-                                                                                    With immediate access, you
-                                                                                    can check hundreds of items
-                                                                                    with an enduring shelf-life
+                                                                                    A specific type of breast imaging
+                                                                                    that
+                                                                                    uses low-dose x-rays for the early
+                                                                                    detection of cancer and another breast
+                                                                                    disease
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -230,14 +236,14 @@
                                                             <a class="carousel-control-prev"
                                                                href="#carouselExample2Controls" role="button"
                                                                data-slide="prev">
-<!--                                                                <i class="fa fa-long-arrow-left" aria-hidden="true"/>-->
+                                                                <!--                                                                <i class="fa fa-long-arrow-left" aria-hidden="true"/>-->
                                                                 <span class="sr-only">Previous</span>
                                                             </a>
 
                                                             <a class="carousel-control-next"
                                                                href="#carouselExample2Controls" role="button"
                                                                data-slide="next">
-<!--                                                                <i class="fa fa-long-arrow-right" aria-hidden="true"/>-->
+                                                                <!--                                                                <i class="fa fa-long-arrow-right" aria-hidden="true"/>-->
                                                                 <span class="sr-only">Next</span>
                                                             </a>
 
