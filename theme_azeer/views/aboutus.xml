@@ -10,6 +10,9 @@
 
                         <div class="hero_bg_box cc" id="img" style="border: none;">
                             <img id="imghero" src="../theme_azeer/static/src/images/aboutus.png" alt="aboutus"/>
+                            <div class="centered">
+                                <h1 style="color: white;font-weight: bold;">About Us</h1>
+                            </div>
                         </div>
 
                         <!-- header section strats -->
@@ -18,7 +21,8 @@
                                 <nav class="navbar navbar-expand-lg custom_nav-container " id="#p-22">
                                     <a class="navbar-brand" href="/" style="width:200px">
                                         <img id="navbar-brand" src="../theme_azeer/static/src/images/logoazeer.png"
-                                             alt="logo azeer" style="margin-left: 100px; margin-right: 100px;"/></a>
+                                             alt="logo azeer" style="margin-left: 100px; margin-right: 100px;"/>
+                                    </a>
                                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                             aria-expanded="false" aria-label="Toggle navigation">
@@ -182,25 +186,25 @@
                                                         <a class="carousel-control-prev"
                                                            href="#carouselExample2Controls" role="button"
                                                            data-slide="prev">
-<!--                                                            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>-->
+                                                            <!--                                                            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>-->
                                                             <span class="sr-only">Previous</span>
                                                         </a>
                                                         <a class="carousel-control-prev"
                                                            href="#carouselExample2Controls" role="button"
                                                            data-slide="prev">
-<!--                                                            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>-->
+                                                            <!--                                                            <i class="fa fa-long-arrow-left" aria-hidden="true"></i>-->
                                                             <span class="sr-only">Previous</span>
                                                         </a>
                                                         <a class="carousel-control-next"
                                                            href="#carouselExample2Controls" role="button"
                                                            data-slide="next">
-<!--                                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>-->
+                                                            <!--                                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>-->
                                                             <span class="sr-only">Next</span>
                                                         </a>
                                                         <a class="carousel-control-next"
                                                            href="#carouselExample2Controls" role="button"
                                                            data-slide="next">
-<!--                                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>-->
+                                                            <!--                                                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>-->
                                                             <span class="sr-only">Next</span>
                                                         </a>
                                                     </div>
