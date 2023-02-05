@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'website', 'web', 'portal', 'auth_signup','sale'],
+    'depends': ['base', 'website', 'web', 'portal', 'auth_signup'],
 
     # always loaded
     'data': [
@@ -37,6 +37,7 @@
         'views/auth/login.xml',
         'views/auth/signup.xml',
         'views/auth/reset_password.xml',
+        'views/res_partner.xml',
     ],
     'assets': {
         'web.assets_frontend': [
@@ -48,8 +49,6 @@
             '/theme_azeer/static/src/css/custom.css',
             '/theme_azeer/static/src/css/recustom.css',
             "https://fonts.cdnfonts.com/css/nexa-bold",
-            '/theme_azeer/static/src/carousel.js',
-
         ],
 
     },
