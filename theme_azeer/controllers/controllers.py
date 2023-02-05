@@ -9,7 +9,7 @@ class Website(Website):
     @http.route(auth='public')
     def index(self, page=0, **kw):
         super(Website, self).index()
-        partners = request.env['res.partner'].sudo().search([('customer_rank', '>=', 1)])
+        partners = request.env['res.partner'].sudo().search([('is_published', '=', True)])
         data = {'partners': partners}
         return http.request.render('theme_azeer.azeer_home', data)
 
