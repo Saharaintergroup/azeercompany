@@ -150,8 +150,9 @@
 
             <xpath expr="//td[@name='td_taxes']" position="replace">
             </xpath>
-            <xpath expr="//p[@t-field='doc.note']" position="replace">
-            </xpath>
+<!--            <xpath expr="//p[@t-field='doc.note']" position="replace">-->
+<!--                <p t-field="doc.note" style="direction;rtl;"/>-->
+<!--            </xpath>-->
 
             <xpath expr="//span[@t-field='doc.payment_term_id.note']" position="replace">
             </xpath>
