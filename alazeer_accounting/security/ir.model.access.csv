@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_alazeer_accounting_alazeer_accounting,alazeer_accounting.alazeer_accounting,model_alazeer_accounting_alazeer_accounting,base.group_user,1,1,1,1
+access_alazeer_sale_term,alazeer_accounting.sale_term,model_sale_term,base.group_user,1,1,1,1
+access_alazeer_sale_term_name,alazeer_accounting.sale_term_name,model_sale_term_name,base.group_user,1,1,1,1
