@@ -107,37 +107,37 @@
 
         <template id="report_saleorder_document_customized" inherit_id="sale.report_saleorder_document">
 
-            <xpath expr="//div[@name='so_total_summary']" position="after">
-                <div t-if="len(doc.sale_term_ids)>0" class="o_sale_term mt-5">
-                    <div class="mb-2">
-                        <strong>Sales Terms:</strong>
-                    </div>
-                    <table class="table table-sm o_main_table">
-                        <thead style="display: table-row-group">
-                            <tr>
-                                <th name="th_name" class="text-left">#</th>
-                                <th name="th_name" class="text-left">Terms</th>
-                                <th name="th_description" class="text-left">Description</th>
-                            </tr>
-                        </thead>
-                        <tbody class="sale_tbody">
-                            <t t-foreach="doc.sale_term_ids" t-as="term">
-                                <tr>
-                                    <td name="td_sequence">
-                                        <span t-esc="term_index + 1"/>
-                                    </td>
-                                    <td style="white-space: nowrap;">
-                                        <span t-esc="term.name.name"/>
-                                    </td>
-                                    <td>
-                                        <span t-field="term.description"/>
-                                    </td>
-                                </tr>
-                            </t>
-                        </tbody>
-                    </table>
-                </div>
-            </xpath>
+<!--            <xpath expr="//div[@name='so_total_summary']" position="after">-->
+<!--                <div t-if="len(doc.sale_term_ids)>0" class="o_sale_term mt-5">-->
+<!--                    <div class="mb-2">-->
+<!--                        <strong>Sales Terms:</strong>-->
+<!--                    </div>-->
+<!--                    <table class="table table-sm o_main_table">-->
+<!--                        <thead style="display: table-row-group">-->
+<!--                            <tr>-->
+<!--                                <th name="th_name" class="text-left">#</th>-->
+<!--                                <th name="th_name" class="text-left">Terms</th>-->
+<!--                                <th name="th_description" class="text-left">Description</th>-->
+<!--                            </tr>-->
+<!--                        </thead>-->
+<!--                        <tbody class="sale_tbody">-->
+<!--                            <t t-foreach="doc.sale_term_ids" t-as="term">-->
+<!--                                <tr>-->
+<!--                                    <td name="td_sequence">-->
+<!--                                        <span t-esc="term_index + 1"/>-->
+<!--                                    </td>-->
+<!--                                    <td style="white-space: nowrap;">-->
+<!--                                        <span t-esc="term.name.name"/>-->
+<!--                                    </td>-->
+<!--                                    <td>-->
+<!--                                        <span t-field="term.description"/>-->
+<!--                                    </td>-->
+<!--                                </tr>-->
+<!--                            </t>-->
+<!--                        </tbody>-->
+<!--                    </table>-->
+<!--                </div>-->
+<!--            </xpath>-->
             <xpath expr="//th[@name='th_description']" position="replace">
                 <th name="th_description" class="text-left">
                     <span>Item Description</span>
